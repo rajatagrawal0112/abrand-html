@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route , Switch, Link} from 'react-router-dom';
+import bookADemo from './pages/book-a-demo';
+import brands from './pages/brands';
+import Index from './pages/index';
+import influencers from './pages/influencers';
+import pricing from './pages/pricing';
+import retailAndEcommerce from './pages/retaill-and-ecommerce'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route path="/" exact component={Index} />
+          <Route path="/bookADemo" component={bookADemo} />
+          <Route path="/brands" component={brands} />
+          <Route path="/influencers" component={influencers} />
+          <Route path="/pricing" component={pricing} />
+          <Route path="/retailAndEcommerce" component={retailAndEcommerce} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
