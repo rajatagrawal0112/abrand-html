@@ -7,6 +7,8 @@ import Index from './pages/index';
 import influencers from './pages/influencers';
 import pricing from './pages/pricing';
 import retailAndEcommerce from './pages/retaill-and-ecommerce'
+import signup from './pages/signup'
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/influencers" component={influencers} />
           <Route path="/pricing" component={pricing} />
           <Route path="/retailAndEcommerce" component={retailAndEcommerce} />
+          <Route path="/signup" component={signup} />
         </Switch>
       </div>
     </Router>

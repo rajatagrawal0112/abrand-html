@@ -8,22 +8,34 @@ class Index extends React.Component {
             <body class="home">
                 <header class="main-header capped-width has-shadow" role="none">
                     <div class="navigation">
-                        <div class="logo"><img src={"assets/images/logo.png"} alt="" /> </div>
+                        <div class="logo">
+                           <a href="/">
+                            <img src={"assets/images/logo.png"} alt="" />
+                               </a> 
+                             </div>
                         <nav class="header-menu">
                             <ul>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                
+                                <p><NavLink exact to="/brands">Platform</NavLink></p>
+                                    </li>
                                 <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
                                     <ul class="hs-menu-children-wrapper">
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"> <p><NavLink exact to="/retailAndEcommerce">Retail & eComm</NavLink></p></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><p><NavLink exact to="/influencers">Creators</NavLink></p></li>
                                 <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/pricing">Pricing</NavLink></p>
+                                </li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/bookademo">Request a Demo</NavLink></p>
+                                </li>
+
                             </ul>
                         </nav>
                     </div>
@@ -147,7 +159,7 @@ class Index extends React.Component {
                                     <div class="image-with-handle lazy-load"><img src={"assets/images/home/slider/banner-4.jpg"} alt="" /></div>
                                     <div class="image-with-handle lazy-load"><img src={"assets/images/home/slider/banner-5.jpg"} alt="" /></div>
                                     <div class="image-with-handle lazy-load"><img src={"assets/images/home/slider/banner-6.jpg"} alt="" /></div>
-                                    <div class="image-with-handle lazy-load"><img src={"assets/images/home/slider/banner-7.jpg" }alt="" /></div>
+                                    <div class="image-with-handle lazy-load"><img src={"assets/images/home/slider/banner-7.jpg"} alt="" /></div>
                                 </div>
                             </div>
                         </div>

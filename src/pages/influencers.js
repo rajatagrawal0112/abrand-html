@@ -1,69 +1,81 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
-class brands extends React.Component {
+
+class influencers extends React.Component {
     render() {
         return (
-            <body class="creator">
-                <header class="main-header capped-width has-shadow" role="none">
-                    <div class="navigation">
-                        <div class="logo"><img src={"assets/images/logo.png"} alt=""/> </div>
+            <body className="creator">
+                <header className="main-header capped-width has-shadow" role="none">
+                    <div className="navigation">
+                        <div className="logo"><img src={"assets/images/logo.png"} alt=""/> </div>
                         <nav class="header-menu">
                             <ul>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                
+                                <p>
+                                    <NavLink exact to="/brands">Platform</NavLink>
+                                    </p>
+                                    </li>
                                 <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
                                     <ul class="hs-menu-children-wrapper">
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"> <p><NavLink exact to="/retailAndEcommerce">Retail & eComm</NavLink></p></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><p><NavLink exact to="/influencers">Creators</NavLink></p></li>
                                 <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/pricing">Pricing</NavLink></p>
+                                </li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/bookademo">Request a Demo</NavLink></p>
+                                </li>
+
                             </ul>
                         </nav>
-                    </div>
-                    <div class="login_calltoaction"> <a href="#">Login</a> <a class="cta-button primary-cta" href="#">Get Started Today</a> </div>
+                        </div>
+                    <div className="login_calltoaction"> <a href="#">Login</a> <a className="cta-button primary-cta" href="#">Get Started Today</a> </div>
                 </header>
-                <header class="mobile-header  home" role="none">
-                    <div class="icon-wrapper" role="navigation">
+                <header className="mobile-header  home" role="none">
+                    <div className="icon-wrapper" role="navigation">
                         <a href="/"><img src={"assets/images/logo-mobile.png"} width="50" style={{ "width": "50px" }} alt="Logo" title="Logo"/></a>
                     </div>
                 </header>
-                <aside class="mobile-menu">
-                    <nav class="header-menu">
-                        <div class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal">
+                <aside className="mobile-menu">
+                    <nav className="header-menu">
+                        <div className="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal">
                             <ul role="menu">
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
-                                    <ul class="hs-menu-children-wrapper">
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
+                                    <ul className="hs-menu-children-wrapper">
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <nav class="footer-menu">
+                    <nav className="footer-menu">
                         <ul role="menu">
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Marketers in Pyjamas</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">About Us</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Blog</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Events &amp; Webinars</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Contact Us</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem" target="_blank" rel="noopener">Help Center</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Marketers in Pyjamas</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">About Us</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Blog</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Events &amp; Webinars</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Contact Us</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem" target="_blank" rel="noopener">Help Center</a></li>
                         </ul>
                     </nav>
-                    <div class="social-icons">
+                    <div className="social-icons">
                         <a href="#" title="instagram" target="_blank">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
                                 <g id="layer1">
@@ -94,120 +106,120 @@ class brands extends React.Component {
                         </a>
                     </div>
                 </aside>
-                <div class="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
-                    <a id="" class="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
-                    <section class="login_calltoaction" role="navigation">
+                <div className="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
+                    <a id="" className="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
+                    <section className="login_calltoaction" role="navigation">
                         <a href="#" target="_blank">LOGIN</a>
                     </section>
                 </div>
-                <div class="hamburger-menu">
-                    <div class="hamburger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                <div className="hamburger-menu">
+                    <div className="hamburger">
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        <span className="line"></span>
                     </div>
                 </div>
-                <main class="main-content ">
-                    <section id="creator-main-section" class="creator-jumbotron inner-width-mobile inner-width creator">
-                        <div class="column video">
-                            <section class="wistia-video" style={{ "width": "80%" }}>
-                                <div id="hs_cos_wrapper_module_160033976565325_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="inline_text" data-hs-cos-field="wistia_embeded_code">
+                <main className="main-content ">
+                    <section id="creator-main-section" className="creator-jumbotron inner-width-mobile inner-width creator">
+                        <div className="column video">
+                            <section className="wistia-video" style={{ "width": "80%" }}>
+                                <div id="hs_cos_wrapper_module_160033976565325_" className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_text" style={{}} data-hs-cos-general-type="widget" data-hs-cos-type="inline_text" data-hs-cos-field="wistia_embeded_code">
                                     <script src="https://fast.wistia.com/embed/medias/lcnahldul6.jsonp" async></script>
                                     <script src={"https://fast.wistia.com/assets/external/E-v1.js"} async></script>
-                                    <div class="wistia_responsive_padding" style={{ "padding": "100.0% 0 0 0;", "position": "relative;" }}>
-                                        <div class="wistia_responsive_wrapper" style={{ "height": "100%;", "left": "0;", "position": "absolute;", "top": "0;", "width": "100%;" }}>
-                                            <div class="wistia_embed wistia_async_lcnahldul6 videoFoam=true" style={{ "height": "100%;", "position": "relative;", "width": "100%" }}>&nbsp;</div>
+                                    <div className="wistia_responsive_padding" style={{ "padding": "100.0% 0 0 0", "position": "relative" }}>
+                                        <div className="wistia_responsive_wrapper" style={{ "height": "100%", "left": "0", "position": "absolute", "top": "0", "width": "100%" }}>
+                                            <div className="wistia_embed wistia_async_lcnahldul6 videoFoam=true" style={{ "height": "100%", "position": "relative", "width": "100%" }}>&nbsp;</div>
                                         </div>
                                     </div>
                                 </div>
                             </section>
                         </div>
-                        <div class="column content flexible-cta">
-                            <h1>Create content. <br class="desktop-only"> Have fun. <br class="desktop-only"> Get paid.</h1>
+                        <div className="column content flexible-cta">
+                            <h1>Create content. <br className="desktop-only"/> Have fun. <br className="desktop-only"/> Get paid.</h1>
                                 <p>Start that side hustle without the hassle. Make money promoting the products you already use and love.</p>
-                                <div class="download-cta">
-                                    <div class="appstore-cta">
-                                        <span class="hs-cta-wrapper">
-                                            <a class="cta_button" href="#"><img src={"assets/images/app-store.png"}></a>
+                                <div className="download-cta">
+                                    <div className="appstore-cta">
+                                        <span className="hs-cta-wrapper">
+                                            <a className="cta_button" href="#"><img src={"assets/images/app-store.png"}/></a>
                                         </span>
                                     </div>
-                                    <div class="googleplay-cta">
-                                        <span class="hs-cta-wrapper">
-                                            <a class="cta_button" href="#"><img src={"assets/images/google.png"}></a>
+                                    <div className="googleplay-cta">
+                                        <span className="hs-cta-wrapper">
+                                            <a className="cta_button" href="#"><img src={"assets/images/google.png"}/></a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             </section>
-                            <section class="how-ABRAND-works-wrapper inner-width-mobile inner-width">
-                                <div class="column video">
-                                    <section class="wistia-video" style={{ "width": "100%" }}>
-                                        <div id="hs_cos_wrapper_module_1534222733277682_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="inline_text" data-hs-cos-field="wistia_embeded_code">
+                            <section className="how-ABRAND-works-wrapper inner-width-mobile inner-width">
+                                <div className="column video">
+                                    <section className="wistia-video" style={{ "width": "100%" }}>
+                                        <div id="hs_cos_wrapper_module_1534222733277682_" className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_text" style={{}} data-hs-cos-general-type="widget" data-hs-cos-type="inline_text" data-hs-cos-field="wistia_embeded_code">
                                             <script src="https://fast.wistia.com/embed/medias/v8momplcy7.jsonp" async></script>
                                             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-                                            <div class="wistia_responsive_padding" style={{ "padding": "56.25% 0 0 0;", "position": "relative;" }}>
-                                                <div class="wistia_responsive_wrapper" style={{ "height": "100%;", "left": "0;", "position": "absolute;", "top": "0;", "width": "100%;" }}>
-                                                    <div class="wistia_embed wistia_async_v8momplcy7 videoFoam=true" style={{ "height": "100%;", "position": "relative;", "width": "100%" }}>
-                                                        <div class="wistia_swatch" style={{ "height": "100%;", "left": "0;", "opacity": "0;", "overflow": "hidden;", "position": "absolute;", "top": "0;", "transition": "opacity" "200ms;", "width": "100%;" }}><img src={"https://fast.wistia.com/embed/medias/v8momplcy7/swatch"} style="filter":"blur(5px);","height":"100%;","object-fit":"contain;","width":"100%;"}} alt="" onload="this.parentNode.style.opacity=1;"></div>
+                                            <div className="wistia_responsive_padding" style={{ "padding": "56.25% 0 0 0", "position": "relative" }}>
+                                                <div className="wistia_responsive_wrapper" style={{ "height": "100%", "left": "0", "position": "absolute", "top": "0", "width": "100%" }}>
+                                                    <div className="wistia_embed wistia_async_v8momplcy7 videoFoam=true" style={{ "height": "100%", "position": "relative", "width": "100%" }}>
+                                                        <div className="wistia_swatch" style={{ "height": "100%", "left": "0", "opacity": "0", "overflow": "hidden", "position": "absolute", "top": "0", "transition": "opacity 200ms", "width": "100%" }}><img src={"https://fast.wistia.com/embed/medias/v8momplcy7/swatch"} style={{ "filter": "blur(5px)", "height": "100%", "objectFit": "contain", "width": "100%" }} alt="" onLoad="this.parentNode.style.opacity=1;"/></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </div>
-                                <div class="column how-ABRAND-works">
-                                    <h2><span id="hs_cos_wrapper_how-it-works-title" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text">HOW ABRAND WORKS</span></h2>
-                                    <h3>You bring the creativity.<br class="desktop-only">We’ll bring fresh campaigns daily.</h3>
+                                <div className="column how-ABRAND-works">
+                                    <h2><span id="hs_cos_wrapper_how-it-works-title" className="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style={{}} data-hs-cos-general-type="widget" data-hs-cos-type="text">HOW ABRAND WORKS</span></h2>
+                                    <h3>You bring the creativity.<br className="desktop-only"/>We’ll bring fresh campaigns daily.</h3>
                                 </div>
                             </section>
 
-                            <section class="why-abrand inner-width-mobile inner-width">
-                                <div class="column cta flexible-cta">
-                                    <h2 class="mobile-only">WHY ABRAND</h2>
+                            <section className="why-abrand inner-width-mobile inner-width">
+                                <div className="column cta flexible-cta">
+                                    <h2 className="mobile-only">WHY ABRAND</h2>
                                     <h3>Why creators love ABRAND.</h3>
                                 </div>
-                                <div class="column cards flexible-cta">
+                                <div className="column cards flexible-cta">
                                     <div id="hs_cos_wrapper_information-cards">
                                         <div>
-                                            <div class="info-card">
-                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=64&amp;height=64&amp;name=Creator-SetFee-x2.png"} alt="Set Fee" width="64" height="64" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=32&amp;height=32&amp;name=Creator-SetFee-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=64&amp;height=64&amp;name=Creator-SetFee-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=96&amp;height=96&amp;name=Creator-SetFee-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=128&amp;height=128&amp;name=Creator-SetFee-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=160&amp;height=160&amp;name=Creator-SetFee-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=192&amp;height=192&amp;name=Creator-SetFee-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px">
-                                                <div class ="card-title"></div>
-                                                <div class ="card-caption">Confirm your price and get paid in as little as 48 hours.</div>
+                                            <div className="info-card">
+                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=64&amp;height=64&amp;name=Creator-SetFee-x2.png"} alt="Set Fee" width="64" height="64" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=32&amp;height=32&amp;name=Creator-SetFee-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=64&amp;height=64&amp;name=Creator-SetFee-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=96&amp;height=96&amp;name=Creator-SetFee-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=128&amp;height=128&amp;name=Creator-SetFee-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=160&amp;height=160&amp;name=Creator-SetFee-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-SetFee-x2.png?width=192&amp;height=192&amp;name=Creator-SetFee-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px"/>
+                                                <div className ="card-title"></div>
+                                                <div className ="card-caption">Confirm your price and get paid in as little as 48 hours.</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="info-card">
+                                            <div className="info-card">
 
-                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=64&amp;height=64&amp;name=Creator-BuiltForAuthenticity-x2.png"} alt="Built For Authenticity" width="64" height="64" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=32&amp;height=32&amp;name=Creator-BuiltForAuthenticity-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=64&amp;height=64&amp;name=Creator-BuiltForAuthenticity-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=96&amp;height=96&amp;name=Creator-BuiltForAuthenticity-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=128&amp;height=128&amp;name=Creator-BuiltForAuthenticity-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=160&amp;height=160&amp;name=Creator-BuiltForAuthenticity-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=192&amp;height=192&amp;name=Creator-BuiltForAuthenticity-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px">
+                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=64&amp;height=64&amp;name=Creator-BuiltForAuthenticity-x2.png"} alt="Built For Authenticity" width="64" height="64" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=32&amp;height=32&amp;name=Creator-BuiltForAuthenticity-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=64&amp;height=64&amp;name=Creator-BuiltForAuthenticity-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=96&amp;height=96&amp;name=Creator-BuiltForAuthenticity-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=128&amp;height=128&amp;name=Creator-BuiltForAuthenticity-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=160&amp;height=160&amp;name=Creator-BuiltForAuthenticity-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-BuiltForAuthenticity-x2.png?width=192&amp;height=192&amp;name=Creator-BuiltForAuthenticity-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px"/>
 
-                                                <div class ="card-title"></div>
-                                                <div class ="card-caption">Loads of daily opportunities to make money promoting the brands you love.</div>
+                                                <div className ="card-title"></div>
+                                                <div className ="card-caption">Loads of daily opportunities to make money promoting the brands you love.</div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="info-card">
+                                            <div className="info-card">
 
-                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=64&amp;height=64&amp;name=Creator-ContentTalking-x2.png"} alt="Content Talking" width="64" height="64" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=32&amp;height=32&amp;name=Creator-ContentTalking-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=64&amp;height=64&amp;name=Creator-ContentTalking-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=96&amp;height=96&amp;name=Creator-ContentTalking-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=128&amp;height=128&amp;name=Creator-ContentTalking-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=160&amp;height=160&amp;name=Creator-ContentTalking-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=192&amp;height=192&amp;name=Creator-ContentTalking-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px">
+                                                <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=64&amp;height=64&amp;name=Creator-ContentTalking-x2.png"} alt="Content Talking" width="64" height="64" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=32&amp;height=32&amp;name=Creator-ContentTalking-x2.png 32w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=64&amp;height=64&amp;name=Creator-ContentTalking-x2.png 64w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=96&amp;height=96&amp;name=Creator-ContentTalking-x2.png 96w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=128&amp;height=128&amp;name=Creator-ContentTalking-x2.png 128w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=160&amp;height=160&amp;name=Creator-ContentTalking-x2.png 160w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/creators/Creator-ContentTalking-x2.png?width=192&amp;height=192&amp;name=Creator-ContentTalking-x2.png 192w"} sizes="(max-width: 64px) 100vw, 64px"/>
 
-                                                <div class ="card-title"></div>
-                                                <div class ="card-caption">It’s fun AF...plus you’re making cash on the side.</div>
+                                                <div className ="card-title"></div>
+                                                <div className ="card-caption">It’s fun AF...plus you’re making cash on the side.</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-                            <section id="what-are-your-posts-worth" class="what-are-your-posts-worth">
-                                <div class="inner-width-mobile inner-width">
+                            <section id="what-are-your-posts-worth" className="what-are-your-posts-worth">
+                                <div className="inner-width-mobile inner-width">
                                     <h2>What are your posts worth?</h2>
-                                    <div class="posts-table-wrapper">
+                                    <div className="posts-table-wrapper">
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <th class="header">Number of followers</th>
-                                                    <th class="header">Ballpark rate</th>
+                                                    <th className="header">Number of followers</th>
+                                                    <th className="header">Ballpark rate</th>
                                                 </tr>
                                                 <tr>
-                                                    <th class="header"><small>Per account</small>
+                                                    <th className="header"><small>Per account</small>
                                                         <div>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
@@ -220,8 +232,8 @@ class brands extends React.Component {
                                                             </svg>
                                                         </div>
                                                     </th>
-                                                    <th class="header"><small>Per post in AUD</small>
-                                                        <div class="pink-text">Video &amp; motion: 25% - 50% higher</div>
+                                                    <th className="header"><small>Per post in AUD</small>
+                                                        <div className="pink-text">Video &amp; motion: 25% - 50% higher</div>
                                                     </th>
                                                 </tr>
                                                 <tr>
@@ -258,123 +270,123 @@ class brands extends React.Component {
                                 </div>
                             </section>
 
-                            <section class="bg-gray container-fluid creator-testimonials-wrapper">
-                                <div class="a-home-testimonials creator-testimonials testimonials inner-width inner-width-mobile">
-                                    <span id="hs_cos_wrapper_quote-icon"><img src={"assets/images/Brand-Creator-TestimonialsAccent-x2.png"} alt="" title=""></span>
-                                    <div class="row">
+                            <section className="bg-gray container-fluid creator-testimonials-wrapper">
+                                <div className="a-home-testimonials creator-testimonials testimonials inner-width inner-width-mobile">
+                                    <span id="hs_cos_wrapper_quote-icon"><img src={"assets/images/Brand-Creator-TestimonialsAccent-x2.png"} alt="" title=""/></span>
+                                    <div className="row">
                                         <div id="hs_cos_wrapper_testimonial-slider">
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=800&amp;height=162&amp;name=brandlogo-mars-b.png"} alt="brandlogo-mars-b" width="800" height="162" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=400&amp;height=81&amp;name=brandlogo-mars-b.png 400w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=800&amp;height=162&amp;name=brandlogo-mars-b.png 800w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=1200&amp;height=243&amp;name=brandlogo-mars-b.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=1600&amp;height=324&amp;name=brandlogo-mars-b.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=2000&amp;height=405&amp;name=brandlogo-mars-b.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=2400&amp;height=486&amp;name=brandlogo-mars-b.png 2400w"} sizes="(max-width: 800px) 100vw, 800px">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=800&amp;height=162&amp;name=brandlogo-mars-b.png"} alt="brandlogo-mars-b" width="800" height="162" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=400&amp;height=81&amp;name=brandlogo-mars-b.png 400w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=800&amp;height=162&amp;name=brandlogo-mars-b.png 800w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=1200&amp;height=243&amp;name=brandlogo-mars-b.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=1600&amp;height=324&amp;name=brandlogo-mars-b.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=2000&amp;height=405&amp;name=brandlogo-mars-b.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/brandlogo-mars-b.png?width=2400&amp;height=486&amp;name=brandlogo-mars-b.png 2400w"} sizes="(max-width: 800px) 100vw, 800px"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=156&amp;height=156&amp;name=display-logo-mars.png"} alt="display-logo-mars" width="156" height="156" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=78&amp;height=78&amp;name=display-logo-mars.png 78w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=156&amp;height=156&amp;name=display-logo-mars.png 156w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=234&amp;height=234&amp;name=display-logo-mars.png 234w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=312&amp;height=312&amp;name=display-logo-mars.png 312w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=390&amp;height=390&amp;name=display-logo-mars.png 390w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=468&amp;height=468&amp;name=display-logo-mars.png 468w"} sizes="(max-width: 156px) 100vw, 156px">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=156&amp;height=156&amp;name=display-logo-mars.png"} alt="display-logo-mars" width="156" height="156" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=78&amp;height=78&amp;name=display-logo-mars.png 78w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=156&amp;height=156&amp;name=display-logo-mars.png 156w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=234&amp;height=234&amp;name=display-logo-mars.png 234w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=312&amp;height=312&amp;name=display-logo-mars.png 312w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=390&amp;height=390&amp;name=display-logo-mars.png 390w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/display-logo-mars.png?width=468&amp;height=468&amp;name=display-logo-mars.png 468w"} sizes="(max-width: 156px) 100vw, 156px"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> MARS Chocolate </span>
-                                                            <span class="reviewer_detail1"> Michael Davies </span>
-                                                            <span class="reviewer_detail2"> Global Media Director </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> MARS Chocolate </span>
+                                                            <span className="reviewer_detail1"> Michael Davies </span>
+                                                            <span className="reviewer_detail2"> Global Media Director </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
 
 
-                                                            <img src={"assets/images/home/testimonials/mars-choc.jpg"} alt="">
+                                                            <img src={"assets/images/home/testimonials/mars-choc.jpg"} alt=""/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=150&amp;height=150&amp;name=displaypic-mars.jpg"} alt="seachiic" width="150" height="150" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=75&amp;height=75&amp;name=displaypic-mars.jpg 75w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=150&amp;height=150&amp;name=displaypic-mars.jpg 150w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=225&amp;height=225&amp;name=displaypic-mars.jpg 225w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=300&amp;height=300&amp;name=displaypic-mars.jpg 300w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=375&amp;height=375&amp;name=displaypic-mars.jpg 375w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=450&amp;height=450&amp;name=displaypic-mars.jpg 450w"} sizes="(max-width: 150px) 100vw, 150px">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=150&amp;height=150&amp;name=displaypic-mars.jpg"} alt="seachiic" width="150" height="150" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=75&amp;height=75&amp;name=displaypic-mars.jpg 75w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=150&amp;height=150&amp;name=displaypic-mars.jpg 150w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=225&amp;height=225&amp;name=displaypic-mars.jpg 225w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=300&amp;height=300&amp;name=displaypic-mars.jpg 300w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=375&amp;height=375&amp;name=displaypic-mars.jpg 375w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Mars/displaypic-mars.jpg?width=450&amp;height=450&amp;name=displaypic-mars.jpg 450w"} sizes="(max-width: 150px) 100vw, 150px"/>
 
 
                                                     @seachiic
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         ABRAND is genius! Best advertising product I’ve seen all year!
                                                     </p>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=360&amp;height=134&amp;name=swisse.png"} alt="swisse" width="360" height="134" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=180&amp;height=67&amp;name=swisse.png 180w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=360&amp;height=134&amp;name=swisse.png 360w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=540&amp;height=201&amp;name=swisse.png 540w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=720&amp;height=268&amp;name=swisse.png 720w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=900&amp;height=335&amp;name=swisse.png 900w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=1080&amp;height=402&amp;name=swisse.png 1080w"} sizes="(max-width: 360px) 100vw, 360px">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=360&amp;height=134&amp;name=swisse.png"} alt="swisse" width="360" height="134" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=180&amp;height=67&amp;name=swisse.png 180w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=360&amp;height=134&amp;name=swisse.png 360w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=540&amp;height=201&amp;name=swisse.png 540w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=720&amp;height=268&amp;name=swisse.png 720w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=900&amp;height=335&amp;name=swisse.png 900w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/case-studies/00-Logos/swisse.png?width=1080&amp;height=402&amp;name=swisse.png 1080w"} sizes="(max-width: 360px) 100vw, 360px"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=156&amp;height=156&amp;name=displaylogo-swisse.png"} alt="Swisse" width="156" height="156" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=78&amp;height=78&amp;name=displaylogo-swisse.png 78w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=156&amp;height=156&amp;name=displaylogo-swisse.png 156w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=234&amp;height=234&amp;name=displaylogo-swisse.png 234w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=312&amp;height=312&amp;name=displaylogo-swisse.png 312w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=390&amp;height=390&amp;name=displaylogo-swisse.png 390w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=468&amp;height=468&amp;name=displaylogo-swisse.png 468w"} sizes="(max-width: 156px) 100vw, 156px">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=156&amp;height=156&amp;name=displaylogo-swisse.png"} alt="Swisse" width="156" height="156" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=78&amp;height=78&amp;name=displaylogo-swisse.png 78w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=156&amp;height=156&amp;name=displaylogo-swisse.png 156w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=234&amp;height=234&amp;name=displaylogo-swisse.png 234w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=312&amp;height=312&amp;name=displaylogo-swisse.png 312w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=390&amp;height=390&amp;name=displaylogo-swisse.png 390w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaylogo-swisse.png?width=468&amp;height=468&amp;name=displaylogo-swisse.png 468w"} sizes="(max-width: 156px) 100vw, 156px"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> Swisse </span>
-                                                            <span class="reviewer_detail1"> Siobhan Wend </span>
-                                                            <span class="reviewer_detail2"> PR Adviser </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> Swisse </span>
+                                                            <span className="reviewer_detail1"> Siobhan Wend </span>
+                                                            <span className="reviewer_detail2"> PR Adviser </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
 
 
-                                                            <img src={"assets/images/home/testimonials/swisse.jpg"} alt="">
+                                                            <img src={"assets/images/home/testimonials/swisse.jpg"} alt=""/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=150&amp;height=150&amp;name=displaypic-swisse.jpg"} alt="the.life.of.laura" width="150" height="150" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=75&amp;height=75&amp;name=displaypic-swisse.jpg 75w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=150&amp;height=150&amp;name=displaypic-swisse.jpg 150w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=225&amp;height=225&amp;name=displaypic-swisse.jpg 225w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=300&amp;height=300&amp;name=displaypic-swisse.jpg 300w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=375&amp;height=375&amp;name=displaypic-swisse.jpg 375w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=450&amp;height=450&amp;name=displaypic-swisse.jpg 450w"} sizes="(max-width: 150px) 100vw, 150px">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=150&amp;height=150&amp;name=displaypic-swisse.jpg"} alt="the.life.of.laura" width="150" height="150" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=75&amp;height=75&amp;name=displaypic-swisse.jpg 75w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=150&amp;height=150&amp;name=displaypic-swisse.jpg 150w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=225&amp;height=225&amp;name=displaypic-swisse.jpg 225w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=300&amp;height=300&amp;name=displaypic-swisse.jpg 300w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=375&amp;height=375&amp;name=displaypic-swisse.jpg 375w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/Testimonials/Swisse/displaypic-swisse.jpg?width=450&amp;height=450&amp;name=displaypic-swisse.jpg 450w"} sizes="(max-width: 150px) 100vw, 150px"/>
 
 
                                                     @the.life.of.laura
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         It was phenomenal to see how such a low investment in a new product was able to drive such an amazing uplift in sales.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=1600&amp;height=324&amp;name=brand-logo-adobe.png"} alt="adobe logo" width="1600" height="324" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=800&amp;height=162&amp;name=brand-logo-adobe.png 800w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=1600&amp;height=324&amp;name=brand-logo-adobe.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=2400&amp;height=486&amp;name=brand-logo-adobe.png 2400w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=3200&amp;height=648&amp;name=brand-logo-adobe.png 3200w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=4000&amp;height=810&amp;name=brand-logo-adobe.png 4000w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=4800&amp;height=972&amp;name=brand-logo-adobe.png 4800w"} sizes="(max-width: 1600px) 100vw, 1600px">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=1600&amp;height=324&amp;name=brand-logo-adobe.png"} alt="adobe logo" width="1600" height="324" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=800&amp;height=162&amp;name=brand-logo-adobe.png 800w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=1600&amp;height=324&amp;name=brand-logo-adobe.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=2400&amp;height=486&amp;name=brand-logo-adobe.png 2400w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=3200&amp;height=648&amp;name=brand-logo-adobe.png 3200w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=4000&amp;height=810&amp;name=brand-logo-adobe.png 4000w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/brand-logo-adobe.png?width=4800&amp;height=972&amp;name=brand-logo-adobe.png 4800w"} sizes="(max-width: 1600px) 100vw, 1600px"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=312&amp;height=312&amp;name=display-logo-adobe.png"} alt="adobe logo" width="312" height="312" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=156&amp;height=156&amp;name=display-logo-adobe.png 156w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=312&amp;height=312&amp;name=display-logo-adobe.png 312w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=468&amp;height=468&amp;name=display-logo-adobe.png 468w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=624&amp;height=624&amp;name=display-logo-adobe.png 624w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=780&amp;height=780&amp;name=display-logo-adobe.png 780w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=936&amp;height=936&amp;name=display-logo-adobe.png 936w"} sizes="(max-width: 312px) 100vw, 312px">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=312&amp;height=312&amp;name=display-logo-adobe.png"} alt="adobe logo" width="312" height="312" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=156&amp;height=156&amp;name=display-logo-adobe.png 156w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=312&amp;height=312&amp;name=display-logo-adobe.png 312w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=468&amp;height=468&amp;name=display-logo-adobe.png 468w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=624&amp;height=624&amp;name=display-logo-adobe.png 624w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=780&amp;height=780&amp;name=display-logo-adobe.png 780w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-logo-adobe.png?width=936&amp;height=936&amp;name=display-logo-adobe.png 936w"} sizes="(max-width: 312px) 100vw, 312px"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> Adobe </span>
-                                                            <span class="reviewer_detail1"> David Medina </span>
-                                                            <span class="reviewer_detail2"> Senior Web Producer - Adobe Photoshop Elements </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> Adobe </span>
+                                                            <span className="reviewer_detail1"> David Medina </span>
+                                                            <span className="reviewer_detail2"> Senior Web Producer - Adobe Photoshop Elements </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
 
-                                                            <img src={"assets/images/home/testimonials/adobe-pic.jpg"} alt="">
+                                                            <img src={"assets/images/home/testimonials/adobe-pic.jpg"} alt=""/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=312&amp;height=312&amp;name=display-pic-adobe.jpg"} alt="satkinsongrier" width="312" height="312" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=156&amp;height=156&amp;name=display-pic-adobe.jpg 156w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=312&amp;height=312&amp;name=display-pic-adobe.jpg 312w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=468&amp;height=468&amp;name=display-pic-adobe.jpg 468w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=624&amp;height=624&amp;name=display-pic-adobe.jpg 624w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=780&amp;height=780&amp;name=display-pic-adobe.jpg 780w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=936&amp;height=936&amp;name=display-pic-adobe.jpg 936w"} sizes="(max-width: 312px) 100vw, 312px">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=312&amp;height=312&amp;name=display-pic-adobe.jpg"} alt="satkinsongrier" width="312" height="312" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=156&amp;height=156&amp;name=display-pic-adobe.jpg 156w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=312&amp;height=312&amp;name=display-pic-adobe.jpg 312w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=468&amp;height=468&amp;name=display-pic-adobe.jpg 468w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=624&amp;height=624&amp;name=display-pic-adobe.jpg 624w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=780&amp;height=780&amp;name=display-pic-adobe.jpg 780w, https://www.tribegroup.co/hs-fs/hubfs/Website/testimonials/display-pic-adobe.jpg?width=936&amp;height=936&amp;name=display-pic-adobe.jpg 936w"} sizes="(max-width: 312px) 100vw, 312px"/>
 
 
                                                     @satkinsongrier
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         ABRAND has been truly outstanding to work with! They continue to be creative, insightful, and thorough while listening to our brand's needs and goals. ABRAND continues to evolve with the ever-changing social media landscape, while putting our product directly into the hands of our audience, and beyond
                                                     </p>
                                                 </div>
@@ -385,21 +397,21 @@ class brands extends React.Component {
                                 </div>
                             </section>
 
-                            <section class="what-are-you-waiting-for inner-width">
-                                <div class="image-wrapper">
+                            <section className="what-are-you-waiting-for inner-width">
+                                <div className="image-wrapper">
                                     <span id="hs_cos_wrapper_featured-image-slider">
                                         <div>
-                                            <div class="hs_cos_wrapper">
-                                                <div class="image-with-handle lazy-load">
+                                            <div className="hs_cos_wrapper">
+                                                <div className="image-with-handle lazy-load">
 
 
-                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=896&amp;height=680&amp;name=BA-CTA-Image-2.png"} alt="ajourneytoseven" width="896" height="680" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=448&amp;height=340&amp;name=BA-CTA-Image-2.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=896&amp;height=680&amp;name=BA-CTA-Image-2.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-2.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-2.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-2.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-2.png 2688w"} sizes="(max-width: 896px) 100vw, 896px">
-                                                    <div class ="placeholder-img-cover bottom"></div>
-                                                    <div class ="featured-image-text">
-                                                    <p class ="home-featured-handle">
+                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=896&amp;height=680&amp;name=BA-CTA-Image-2.png"} alt="ajourneytoseven" width="896" height="680" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=448&amp;height=340&amp;name=BA-CTA-Image-2.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=896&amp;height=680&amp;name=BA-CTA-Image-2.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-2.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-2.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-2.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-2.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-2.png 2688w"} sizes="(max-width: 896px) 100vw, 896px"/>
+                                                    <div className ="placeholder-img-cover bottom"></div>
+                                                    <div className ="featured-image-text">
+                                                    <p className ="home-featured-handle">
                                                 @ajourneytoseven
                                                     </p>
-                                                    <p class ="home-featured-text">
+                                                    <p className ="home-featured-text">
 
                                                     for Popchips
                                                     </p>
@@ -408,22 +420,22 @@ class brands extends React.Component {
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="hs_cos_wrapper">
-                                                <div class="image-with-handle lazy-load">
+                                            <div className="hs_cos_wrapper">
+                                                <div className="image-with-handle lazy-load">
 
 
-                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=896&amp;height=680&amp;name=BA-CTA-Image-1.png"} alt="luxe_everyday" width="896" height="680" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=448&amp;height=340&amp;name=BA-CTA-Image-1.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=896&amp;height=680&amp;name=BA-CTA-Image-1.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-1.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-1.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-1.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-1.png 2688w"} sizes="(max-width: 896px) 100vw, 896px"/>
+                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=896&amp;height=680&amp;name=BA-CTA-Image-1.png"} alt="luxe_everyday" width="896" height="680" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=448&amp;height=340&amp;name=BA-CTA-Image-1.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=896&amp;height=680&amp;name=BA-CTA-Image-1.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-1.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-1.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-1.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-1.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-1.png 2688w"} sizes="(max-width: 896px) 100vw, 896px"/>
 
 
-                                                    <div class ="placeholder-img-cover bottom"></div>
+                                                    <div className ="placeholder-img-cover bottom"></div>
 
 
 
-                                                    <div class ="featured-image-text">
-                                                    <p class ="home-featured-handle">
+                                                    <div className ="featured-image-text">
+                                                    <p className ="home-featured-handle">
                                                 @luxe_everyday
                                                     </p>
-                                                    <p class ="home-featured-text">
+                                                    <p className ="home-featured-text">
 
                                                     for Knogins
                                                     </p>
@@ -432,22 +444,22 @@ class brands extends React.Component {
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="hs_cos_wrapper">
-                                                <div class="image-with-handle lazy-load">
+                                            <div className="hs_cos_wrapper">
+                                                <div className="image-with-handle lazy-load">
 
 
-                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=896&amp;height=680&amp;name=BA-CTA-Image-3.png"} alt="adventures.with.mase" width="896" height="680" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=448&amp;height=340&amp;name=BA-CTA-Image-3.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=896&amp;height=680&amp;name=BA-CTA-Image-3.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-3.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-3.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-3.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-3.png 2688w"} sizes="(max-width: 896px) 100vw, 896px">
+                                                    <img src={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=896&amp;height=680&amp;name=BA-CTA-Image-3.png"} alt="adventures.with.mase" width="896" height="680" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=448&amp;height=340&amp;name=BA-CTA-Image-3.png 448w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=896&amp;height=680&amp;name=BA-CTA-Image-3.png 896w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=1344&amp;height=1020&amp;name=BA-CTA-Image-3.png 1344w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=1792&amp;height=1360&amp;name=BA-CTA-Image-3.png 1792w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=2240&amp;height=1700&amp;name=BA-CTA-Image-3.png 2240w, https://www.tribegroup.co/hs-fs/hubfs/tribe-Website-2018-Assets/Brands-Agencies/BA-CTA-Image-3.png?width=2688&amp;height=2040&amp;name=BA-CTA-Image-3.png 2688w"} sizes="(max-width: 896px) 100vw, 896px"/>
 
 
-                                                    <div class ="placeholder-img-cover bottom"></div>
+                                                    <div className ="placeholder-img-cover bottom"></div>
 
 
 
-                                                    <div class ="featured-image-text">
-                                                    <p class ="home-featured-handle">
+                                                    <div className ="featured-image-text">
+                                                    <p className ="home-featured-handle">
                                                 @adventures.with.mase
                                                     </p>
-                                                    <p class ="home-featured-text">
+                                                    <p className ="home-featured-text">
 
                                                     for Qwill App
                                                     </p>
@@ -457,56 +469,56 @@ class brands extends React.Component {
                                         </div>
                                     </span>
                                 </div>
-                                <div class="a-global cta-wrapper flexible-cta parallax-box">
-                                    <h2 class="a-global-secondary-header mw-100 text-left">The world’s biggest brands are waiting for your creativity.</h2>
-                                    <p class="a-global-description">Download the ABRAND App today and start earning.</p>
-                                    <div class="download-cta">
-                                        <div class="appstore-cta">
-                                            <span class="hs-cta-wrapper">
-                                                <a class="cta_button" href="#"><img src={"assets/images/app-store.png"}></a>
+                                <div className="a-global cta-wrapper flexible-cta parallax-box">
+                                    <h2 className="a-global-secondary-header mw-100 text-left">The world’s biggest brands are waiting for your creativity.</h2>
+                                    <p className="a-global-description">Download the ABRAND App today and start earning.</p>
+                                    <div className="download-cta">
+                                        <div className="appstore-cta">
+                                            <span className="hs-cta-wrapper">
+                                                <a className="cta_button" href="#"><img src={"assets/images/app-store.png"}/></a>
                                             </span>
                                         </div>
-                                        <div class="googleplay-cta">
-                                            <span class="hs-cta-wrapper">
-                                                <a class="cta_button" href="#"><img src={"assets/images/google.png"}></a>
+                                        <div className="googleplay-cta">
+                                            <span className="hs-cta-wrapper">
+                                                <a className="cta_button" href="#"><img src={"assets/images/google.png"}/></a>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-                            <div class="bg-bottom"></div>
+                            <div className="bg-bottom"></div>
                         </main>
-                        <footer class="main-footer">
-                            <div class="newsletter-wrapper">
-                                <div class="inner-width-mobile inner-width">
-                                    <div class="newsletter-heading">Subscribe to our Newsletter for eye-catching case studies and clever campaign strategies.</div>
+                        <footer className="main-footer">
+                            <div className="newsletter-wrapper">
+                                <div className="inner-width-mobile inner-width">
+                                    <div className="newsletter-heading">Subscribe to our Newsletter for eye-catching case studies and clever campaign strategies.</div>
                                     <div id="hs_cos_wrapper_newsletter">
                                         <div id="hs_form_target_newsletter">
                                             <form action="">
-                                                <div class="hs_option_choices">
-                                                    <div class="input">
+                                                <div className="hs_option_choices">
+                                                    <div className="input">
                                                         <ul>
-                                                            <li class="hs-form-radio">
+                                                            <li className="hs-form-radio">
                                                                 <label>
-                                                                    <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
+                                                                    <input id="option" className="hs-input " type="radio" name="option_choices" defaultValue="influencer" defaultChecked="" />
                                                                     <span>I'm a Creator</span>
                                                                 </label>
                                                             </li>
-                                                            <li class="hs-form-radio">
+                                                            <li className="hs-form-radio">
                                                                 <label>
-                                                                    <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
+                                                                    <input id="option" className="hs-input " type="radio" name="option_choices" defaultValue="influencer" defaultChecked="" />
                                                                     <span>I'm a Brand</span>
                                                                 </label>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="hs_email">
-                                                    <div class="input">
-                                                        <input id="email" class="hs-input" type="email" name="email" required="" placeholder="Email address*" value="" autocomplete="email" />
+                                                <div className="hs_email">
+                                                    <div className="input">
+                                                        <input id="email" className="hs-input" type="email" name="email" required="" placeholder="Email address*" defaultValue="" autoComplete="email" />
                                                         <button>
                                                             <span>SUBSCRIBE</span>
-                                                            <span class="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter"> </span>
+                                                            <span className="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter"/> </span>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -516,10 +528,10 @@ class brands extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="footer-link-wrapper">
-                                <div class="inner-width footer-link inner-width-mobile">
+                            <div className="footer-link-wrapper">
+                                <div className="inner-width footer-link inner-width-mobile">
                                     <div>
-                                        <nav class="footer-menu">
+                                        <nav className="footer-menu">
                                             <ul role="menu">
                                                 <li><a href="#">Marketers in Pyjamas</a></li>
                                                 <li><a href="#">About Us</a></li>
@@ -531,7 +543,7 @@ class brands extends React.Component {
                                         </nav>
                                     </div>
                                     <div>
-                                        <div class="social-icons">
+                                        <div className="social-icons">
                                             <a href="#" title="instagram" target="_blank">
                                                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
                                                     <g id="layer1">
@@ -572,50 +584,50 @@ class brands extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="footer-locations">
-                                <div class="inner-width inner-width-mobile">
+                            <div className="footer-locations">
+                                <div className="inner-width inner-width-mobile">
                                     <div id="hs_cos_wrapper_footer-locations">
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">New York</span>
-                                                <span class ="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">New York</span>
+                                                <span className ="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">London</span>
-                                                <span class ="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">London</span>
+                                                <span className ="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">Melbourne</span>
-                                                <span class ="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">Melbourne</span>
+                                                <span className ="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">Sydney</span>
-                                                <span class ="address-line">L45/680 George St, Sydney, NSW 2000</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">Sydney</span>
+                                                <span className ="address-line">L45/680 George St, Sydney, NSW 2000</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer-content inner-width-mobile inner-width">
-                                <div class="footer-copyright">
+                            <div className="footer-content inner-width-mobile inner-width">
+                                <div className="footer-copyright">
                                     <div>© abrand 2021</div>
                                     <a href="#">Privacy Policy</a>
                                     <a href="#">Terms and Conditions</a>

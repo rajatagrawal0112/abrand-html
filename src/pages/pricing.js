@@ -1,68 +1,78 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-class brands extends React.Component {
+
+class pricing extends React.Component {
     render() {
         return (
-            <body class="pricing">
-                <header class="main-header capped-width has-shadow" role="none">
-                    <div class="navigation">
-                        <div class="logo"><img src={"assets/images/logo.png"} alt=""> </div>
+            <body className="pricing">
+                <header className="main-header capped-width has-shadow" role="none">
+                    <div className="navigation">
+                        <div className="logo"><img src={"assets/images/logo.png"} alt=""/> </div>
                         <nav class="header-menu">
                             <ul>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                
+                                <p><NavLink exact to="/brands">Platform</NavLink></p>
+                                    </li>
                                 <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
                                     <ul class="hs-menu-children-wrapper">
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"> <p><NavLink exact to="/retailAndEcommerce">Retail & eComm</NavLink></p></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><p><NavLink exact to="/influencers">Creators</NavLink></p></li>
                                 <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/pricing">Pricing</NavLink></p>
+                                </li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/bookademo">Request a Demo</NavLink></p>
+                                </li>
+
                             </ul>
                         </nav>
-                    </div>
-                    <div class="login_calltoaction"> <a href="#">Login</a> <a class="cta-button primary-cta" href="#">Get Started Today</a> </div>
+                        </div>
+                    <div className="login_calltoaction"> <a href="#">Login</a> <a className="cta-button primary-cta" href="#">Get Started Today</a> </div>
                 </header>
-                <header class="mobile-header  home" role="none">
-                    <div class="icon-wrapper" role="navigation">
-                        <a href="/"><img src={"assets/images/logo-mobile.png"} width="50" style={{ "width": "50px" }} alt="Logo" title="Logo"></a>
+                <header className="mobile-header  home" role="none">
+                    <div className="icon-wrapper" role="navigation">
+                        <a href="/"><img src={"assets/images/logo-mobile.png"} width="50" style={{ "width": "50px" }} alt="Logo" title="Logo"/></a>
                     </div>
                 </header>
-                <aside class="mobile-menu">
-                    <nav class="header-menu">
-                        <div class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal">
+                <aside className="mobile-menu">
+                    <nav className="header-menu">
+                        <div className="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal">
                             <ul role="menu">
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
-                                    <ul class="hs-menu-children-wrapper">
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
+                                    <ul className="hs-menu-children-wrapper">
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
+                                        <li className="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
+                                <li className="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <nav class="footer-menu">
+                    <nav className="footer-menu">
                         <ul role="menu">
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Marketers in Pyjamas</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">About Us</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Blog</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Events &amp; Webinars</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Contact Us</a></li>
-                            <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem" target="_blank" rel="noopener">Help Center</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Marketers in Pyjamas</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">About Us</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Blog</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Events &amp; Webinars</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem">Contact Us</a></li>
+                            <li className="hs-menu-item hs-menu-depth-1" role="none"><a href="#" role="menuitem" target="_blank" rel="noopener">Help Center</a></li>
                         </ul>
                     </nav>
-                    <div class="social-icons">
+                    <div className="social-icons">
                         <a href="#" title="instagram" target="_blank">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
                                 <g id="layer1">
@@ -93,55 +103,55 @@ class brands extends React.Component {
                         </a>
                     </div>
                 </aside>
-                <div class="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
-                    <a id="" class="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
-                    <section class="login_calltoaction" role="navigation">
+                <div className="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
+                    <a id="" className="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
+                    <section className="login_calltoaction" role="navigation">
                         <a href="#" target="_blank">LOGIN</a>
                     </section>
                 </div>
-                <div class="hamburger-menu">
-                    <div class="hamburger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                <div className="hamburger-menu">
+                    <div className="hamburger">
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        <span className="line"></span>
                     </div>
                 </div>
-                <main class="main-content ">
-                    <div class="pricing-v2 pricing-v3">
-                        <section class="pricing-copy-section">
-                            <div class="inner-width-mobile inner-width">
-                                <h1>Built for marketing <br> teams of all sizes.</h1>
+                <main className="main-content ">
+                    <div className="pricing-v2 pricing-v3">
+                        <section className="pricing-copy-section">
+                            <div className="inner-width-mobile inner-width">
+                                <h1>Built for marketing <br/> teams of all sizes.</h1>
                             </div>
                         </section>
-                        <div class="mobile-only inner-width-mobile">
-                            <div class="pricing-card pricing-self-serve">
-                                <h4 class="tag">TRY US</h4>
-                                <div class="pricing-card-wrapper">
-                                    <div class="row row-1">
+                        <div className="mobile-only inner-width-mobile">
+                            <div className="pricing-card pricing-self-serve">
+                                <h4 className="tag">TRY US</h4>
+                                <div className="pricing-card-wrapper">
+                                    <div className="row row-1">
                                         <h2>PAY-PER-USE</h2>
-                                        <div class="copy self-serve-copy">
-                                            <p>You’d like to get a feel for the platform as a solution to your influencer marketing and branded content needs.<br><br>Get started today!</p>
+                                        <div className="copy self-serve-copy">
+                                            <p>You’d like to get a feel for the platform as a solution to your influencer marketing and branded content needs.<br/><br/>Get started today!</p>
                                             </div>
                                         </div>
-                                        <div class="row row-2">
-                                            <div class="self-serve-fee">
-                                                <div class="fee">
-                                                    <p class="price">$0</p>
-                                                    <p class="subheader">ANNUAL FEE</p>
-                                                    <p class="details">$299 Activation fee per campaign</p>
+                                        <div className="row row-2">
+                                            <div className="self-serve-fee">
+                                                <div className="fee">
+                                                    <p className="price">$0</p>
+                                                    <p className="subheader">ANNUAL FEE</p>
+                                                    <p className="details">$299 Activation fee per campaign</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-3">
-                                            <div class="self-serve-user">
-                                                <div class="user-title">1 user</div>
+                                        <div className="row row-3">
+                                            <div className="self-serve-user">
+                                                <div className="user-title">1 user</div>
                                             </div>
                                         </div>
-                                        <div class="row row-4">
-                                            <div class="user-title">Basic</div>
+                                        <div className="row row-4">
+                                            <div className="user-title">Basic</div>
                                             <p>&nbsp;</p>
 
-                                            <div class="self-serve-list">
+                                            <div className="self-serve-list">
                                                 <ul>
                                                     <li>50,000 Verified Creators</li>
                                                     <li>Secure payments and legals</li>
@@ -152,43 +162,43 @@ class brands extends React.Component {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="row row-5">
-                                            <span class="hs-cta-wrapper">
-                                                <a class="cta-button primary-cta" href="#">Get Started</a>
+                                        <div className="row row-5">
+                                            <span className="hs-cta-wrapper">
+                                                <a className="cta-button primary-cta" href="#">Get Started</a>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pricing-card pricing-pro">
-                                    <h4 class="tag">MOST POPULAR</h4>
+                                <div className="pricing-card pricing-pro">
+                                    <h4 className="tag">MOST POPULAR</h4>
 
-                                    <div class="pricing-card-wrapper">
-                                        <div class="row row-1">
+                                    <div className="pricing-card-wrapper">
+                                        <div className="row row-1">
                                             <h2>PRO</h2>
-                                            <div class="copy pro-copy">
+                                            <div className="copy pro-copy">
                                                 <p><span>You’re a marketer who needs features and data to help source creators, approve content, measure performance and execute campaigns seamlessly across the year.</span></p>
                                             </div>
                                         </div>
-                                        <div class="row row-2">
-                                            <div class="pro-fee">
-                                                <div class="fee">
-                                                    <p class="price">Custom</p>
-                                                    <p class="subheader">ANNUAL FEE</p>
+                                        <div className="row row-2">
+                                            <div className="pro-fee">
+                                                <div className="fee">
+                                                    <p className="price">Custom</p>
+                                                    <p className="subheader">ANNUAL FEE</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-3">
-                                            <div class="pro-user">
-                                                <div class="user-title">1 user</div>
+                                        <div className="row row-3">
+                                            <div className="pro-user">
+                                                <div className="user-title">1 user</div>
                                                 <p>Unlimited campaigns</p>
                                             </div>
                                         </div>
-                                        <div class="row row-4">
-                                            <div class="user-title" style={{ "text-align": "left;" }}>Mid</div>
-                                            <p style={{ "text-align": "left;" }}>Everything in Pay-Per-Use, plus:</p>
-                                            <p style={{ "text-align": "left;" }}>&nbsp;</p>
+                                        <div className="row row-4">
+                                            <div className="user-title" style={{ "textAlign": "left" }}>Mid</div>
+                                            <p style={{ "textAlign": "left" }}>Everything in Pay-Per-Use, plus:</p>
+                                            <p style={{ "textAlign": "left" }}>&nbsp;</p>
 
-                                            <div class="pro-list">
+                                            <div className="pro-list">
                                                 <ul>
                                                     <li>Advanced platform features</li>
                                                     <li>Full 1st party data and reporting</li>
@@ -198,41 +208,41 @@ class brands extends React.Component {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="row row-5">
-                                            <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                        <div className="row row-5">
+                                            <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pricing-card pricing-teams">
-                                    <div class="pricing-card-wrapper">
-                                        <div class="row row-1">
+                                <div className="pricing-card pricing-teams">
+                                    <div className="pricing-card-wrapper">
+                                        <div className="row row-1">
                                             <h2>TEAMS</h2>
-                                            <div class="copy teams-copy">
+                                            <div className="copy teams-copy">
                                                 <p><span>You’re a marketing team with ongoing influencer activity &amp; digital content needs. Your team needs to effortlessly collaborate, &amp; achieve greater performance efficiencies from your annual activity.</span></p>
                                             </div>
                                         </div>
-                                        <div class="row row-2">
-                                            <div class="teams-fee">
-                                                <div class="fee">
-                                                    <div class="fee">
-                                                        <p class="price">Custom</p>
-                                                        <p class="subheader">ANNUAL FEE</p>
+                                        <div className="row row-2">
+                                            <div className="teams-fee">
+                                                <div className="fee">
+                                                    <div className="fee">
+                                                        <p className="price">Custom</p>
+                                                        <p className="subheader">ANNUAL FEE</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-3">
-                                            <div class="teams-user">
-                                                <div class="user-title">Up to 5 users</div>
+                                        <div className="row row-3">
+                                            <div className="teams-user">
+                                                <div className="user-title">Up to 5 users</div>
                                                 <p>Unlimited campaigns + Unlimited guest &amp; collaborator access</p>
                                             </div>
                                         </div>
-                                        <div class="row row-4">
-                                            <div class="user-title">Advanced</div>
-                                            <p style={{ "text-align": "left;" }}>Everything in Pro, plus:</p>
+                                        <div className="row row-4">
+                                            <div className="user-title">Advanced</div>
+                                            <p style={{ "textAlign": "left" }}>Everything in Pro, plus:</p>
                                             <p>&nbsp;</p>
 
-                                            <div class="teams-list">
+                                            <div className="teams-list">
                                                 <ul>
                                                     <li>Access for up to 5 team members</li>
                                                     <li>Advanced reporting and industry benchmarking</li>
@@ -243,41 +253,41 @@ class brands extends React.Component {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="row row-5">
-                                            <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                        <div className="row row-5">
+                                            <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pricing-card pricing-enterprise">
-                                    <div class="pricing-card-wrapper">
-                                        <div class="row row-1">
+                                <div className="pricing-card pricing-enterprise">
+                                    <div className="pricing-card-wrapper">
+                                        <div className="row row-1">
                                             <h2>ENTERPRISE</h2>
-                                            <div class="copy pro-copy">
+                                            <div className="copy pro-copy">
                                                 <p><span>Let us customise a package of seats, and support to meet your organisation’s influencer marketing and digital content objectives.</span></p>
                                             </div>
                                         </div>
-                                        <div class="row row-2">
-                                            <div class="enterprise-fee">
-                                                <div class="fee">
-                                                    <div class="fee">
-                                                        <p class="price">Custom</p>
-                                                        <p class="subheader">ANNUAL FEE</p>
+                                        <div className="row row-2">
+                                            <div className="enterprise-fee">
+                                                <div className="fee">
+                                                    <div className="fee">
+                                                        <p className="price">Custom</p>
+                                                        <p className="subheader">ANNUAL FEE</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-3">
-                                            <div class="enterprise-user">
-                                                <div class="user-title">Custom Users</div>
+                                        <div className="row row-3">
+                                            <div className="enterprise-user">
+                                                <div className="user-title">Custom Users</div>
                                                 <p>Unlimited campaigns + Unlimited guest &amp; collaborator access</p>
                                             </div>
                                         </div>
-                                        <div class="row row-4">
-                                            <div class="user-title">Advanced</div>
-                                            <p style={{ "text-align": "left;" }}>Everything in Teams, plus:</p>
+                                        <div className="row row-4">
+                                            <div className="user-title">Advanced</div>
+                                            <p style={{ "textAlign": "left" }}>Everything in Teams, plus:</p>
                                             <p>&nbsp;</p>
 
-                                            <div class="enterprise-list">
+                                            <div className="enterprise-list">
                                                 <ul>
                                                     <li>Fully customisable user plan according to multi-brand usage, and multi-regional usage</li>
                                                     <li>Customised data analysis and industry benchmarking</li>
@@ -287,93 +297,93 @@ class brands extends React.Component {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="row row-5">
-                                            <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                        <div className="row row-5">
+                                            <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="desktop-only inner-width-mobile inner-width">
-                                <div class="desktop-pricing-wrapper">
-                                    <div class="row row-1">
-                                        <h4 class="column tag">TRY US</h4>
-                                        <h4 class="column tag">MOST POPULAR</h4>
-                                        <div class="column empty-tags"></div>
-                                        <div class="column empty-tags"></div>
+                            <div className="desktop-only inner-width-mobile inner-width">
+                                <div className="desktop-pricing-wrapper">
+                                    <div className="row row-1">
+                                        <h4 className="column tag">TRY US</h4>
+                                        <h4 className="column tag">MOST POPULAR</h4>
+                                        <div className="column empty-tags"></div>
+                                        <div className="column empty-tags"></div>
                                     </div>
-                                    <div class="row row-2">
-                                        <div class="copy self-serve-copy">
+                                    <div className="row row-2">
+                                        <div className="copy self-serve-copy">
                                             <h2>PAY-PER-USE</h2>
-                                            <p>You’d like to get a feel for the platform as a solution to your influencer marketing and branded content needs.<br><br>Get started today!</p>
+                                            <p>You’d like to get a feel for the platform as a solution to your influencer marketing and branded content needs.<br/><br/>Get started today!</p>
                                             </div>
-                                            <div class ="copy pro-copy">
+                                            <div className ="copy pro-copy">
                                             <h2>PRO</h2>
                                             <p>You’re a marketer who needs features and data to help source creators, approve content, measure performance and execute campaigns seamlessly across the year.</p>
                                             </div>
-                                            <div class ="copy teams-copy">
+                                            <div className ="copy teams-copy">
                                             <h2>TEAMS</h2>
                                             <p>You’re a marketing team with ongoing influencer activity &amp; digital content needs.Your team needs to effortlessly collaborate, &amp; achieve greater performance efficiencies from your annual activity.</p>
                                             </div>
-                                            <div class ="copy pro-copy">
+                                            <div className ="copy pro-copy">
                                             <h2>ENTERPRISE</h2>
                                             <p>Let us customise a package of seats, and support to meet your organisation’s influencer marketing and digital content objectives.</p>
                                             </div>
                                         </div>
 
-                                        <div class="row row-3">
-                                            <div class="self-serve-fee">
-                                                <div class="fee">
-                                                    <p class="price">$0</p>
-                                                    <p class="subheader">ANNUAL FEE</p>
-                                                    <br>
-                                                    <p class ="details">$299 Activation fee per campaign</p>
+                                        <div className="row row-3">
+                                            <div className="self-serve-fee">
+                                                <div className="fee">
+                                                    <p className="price">$0</p>
+                                                    <p className="subheader">ANNUAL FEE</p>
+                                                    <br/>
+                                                    <p className ="details">$299 Activation fee per campaign</p>
                                                 </div>
                                             </div>
-                                            <div class="pro-fee">
-                                                <div class="fee">
-                                                    <p class="price">Custom</p>
-                                                    <p class="subheader">ANNUAL FEE</p>
+                                            <div className="pro-fee">
+                                                <div className="fee">
+                                                    <p className="price">Custom</p>
+                                                    <p className="subheader">ANNUAL FEE</p>
                                                 </div>
                                             </div>
-                                            <div class="teams-fee">
-                                                <div class="fee">
-                                                    <p class="price">Custom</p>
-                                                    <p class="subheader">ANNUAL FEE</p>
+                                            <div className="teams-fee">
+                                                <div className="fee">
+                                                    <p className="price">Custom</p>
+                                                    <p className="subheader">ANNUAL FEE</p>
                                                 </div>
                                             </div>
-                                            <div class="enterprise-fee">
-                                                <div class="fee">
-                                                    <div class="fee">
-                                                        <p class="price">Custom</p>
-                                                        <p class="subheader">ANNUAL FEE</p>
+                                            <div className="enterprise-fee">
+                                                <div className="fee">
+                                                    <div className="fee">
+                                                        <p className="price">Custom</p>
+                                                        <p className="subheader">ANNUAL FEE</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="row row-4">
-                                            <div class="self-serve-user">
-                                                <div class="user-title">1 user</div>
+                                        <div className="row row-4">
+                                            <div className="self-serve-user">
+                                                <div className="user-title">1 user</div>
                                             </div>
-                                            <div class="pro-user">
-                                                <div class="user-title">1 user</div>
+                                            <div className="pro-user">
+                                                <div className="user-title">1 user</div>
                                                 <p>Unlimited campaigns</p>
                                             </div>
-                                            <div class="teams-user">
-                                                <div class="user-title">Up to 5 users</div>
+                                            <div className="teams-user">
+                                                <div className="user-title">Up to 5 users</div>
                                                 <p>Unlimited campaigns + Unlimited guest &amp; collaborator access</p>
                                             </div>
-                                            <div class="enterprise-user">
-                                                <div class="user-title">Custom Users</div>
+                                            <div className="enterprise-user">
+                                                <div className="user-title">Custom Users</div>
                                                 <p>Unlimited campaigns + Unlimited guest &amp; collaborator access</p>
                                             </div>
                                         </div>
-                                        <div class="row row-5">
+                                        <div className="row row-5">
                                             <div>
-                                                <div class="user-title">Basic</div>
+                                                <div className="user-title">Basic</div>
                                                 <p>&nbsp;</p>
 
-                                                <div class="self-serve-list">
+                                                <div className="self-serve-list">
                                                     <ul>
                                                         <li>50,000 Verified Creators</li>
                                                         <li>Secure payments and legals</li>
@@ -385,11 +395,11 @@ class brands extends React.Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="user-title" style={{ "text-align": "left;" }}>Mid</div>
-                                                <p style={{ "text-align": "left;" }}>Everything in Pay-Per-Use, plus:</p>
-                                                <p style={{ "text-align": "left;" }}>&nbsp;</p>
+                                                <div className="user-title" style={{ "textAlign": "left" }}>Mid</div>
+                                                <p style={{ "textAlign": "left" }}>Everything in Pay-Per-Use, plus:</p>
+                                                <p style={{ "textAlign": "left" }}>&nbsp;</p>
 
-                                                <div class="pro-list">
+                                                <div className="pro-list">
                                                     <ul>
                                                         <li>Advanced platform features</li>
                                                         <li>Full 1st party data and reporting</li>
@@ -400,11 +410,11 @@ class brands extends React.Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="user-title">Advanced</div>
+                                                <div className="user-title">Advanced</div>
                                                 <p>Everything in Pro, plus:</p>
                                                 <p>&nbsp;</p>
 
-                                                <div class="teams-list">
+                                                <div className="teams-list">
                                                     <ul>
                                                         <li>Access for up to 5 team members</li>
                                                         <li>Advanced reporting and industry benchmarking</li>
@@ -416,11 +426,11 @@ class brands extends React.Component {
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="user-title">Advanced</div>
+                                                <div className="user-title">Advanced</div>
                                                 <p>Everything in Teams, plus:</p>
                                                 <p>&nbsp;</p>
 
-                                                <div class="enterprise-list">
+                                                <div className="enterprise-list">
                                                     <ul>
                                                         <li>Fully customisable user plan according to multi-brand usage, and multi-regional usage</li>
                                                         <li>Customised data analysis and industry benchmarking</li>
@@ -431,170 +441,170 @@ class brands extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-6">
-                                            <div class="pricing-card-ctas">
-                                                <span class="hs-cta-wrapper">
-                                                    <a class="cta-button primary-cta" href="#">Get Started</a>
+                                        <div className="row row-6">
+                                            <div className="pricing-card-ctas">
+                                                <span className="hs-cta-wrapper">
+                                                    <a className="cta-button primary-cta" href="#">Get Started</a>
                                                 </span>
                                             </div>
-                                            <div class="pricing-card-ctas">
-                                                <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                            <div className="pricing-card-ctas">
+                                                <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                             </div>
-                                            <div class="pricing-card-ctas">
-                                                <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                            <div className="pricing-card-ctas">
+                                                <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                             </div>
-                                            <div class="pricing-card-ctas">
-                                                <span class="hs-cta-wrapper"><a class="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
+                                            <div className="pricing-card-ctas">
+                                                <span className="hs-cta-wrapper"><a className="cta-button primary-cta" href="#">REQUEST DEMO</a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <section class="brand-testimonials testimonials">
-                                    <div class="inner-width">
-                                        <div id="hs_cos_wrapper_testimonial-slider" class="p-testimonials">
+                                <section className="brand-testimonials testimonials">
+                                    <div className="inner-width">
+                                        <div id="hs_cos_wrapper_testimonial-slider" className="p-testimonials">
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=800&amp;height=162&amp;name=brand-logo-blendy-1.png"} alt="blendy" width="800" height="162" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=400&amp;height=81&amp;name=brand-logo-blendy-1.png 400w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=800&amp;height=162&amp;name=brand-logo-blendy-1.png 800w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=1200&amp;height=243&amp;name=brand-logo-blendy-1.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=1600&amp;height=324&amp;name=brand-logo-blendy-1.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=2000&amp;height=405&amp;name=brand-logo-blendy-1.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=2400&amp;height=486&amp;name=brand-logo-blendy-1.png 2400w"} sizes="(max-width: 800px) 100vw, 800px">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=800&amp;height=162&amp;name=brand-logo-blendy-1.png"} alt="blendy" width="800" height="162" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=400&amp;height=81&amp;name=brand-logo-blendy-1.png 400w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=800&amp;height=162&amp;name=brand-logo-blendy-1.png 800w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=1200&amp;height=243&amp;name=brand-logo-blendy-1.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=1600&amp;height=324&amp;name=brand-logo-blendy-1.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=2000&amp;height=405&amp;name=brand-logo-blendy-1.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-blendy-1.png?width=2400&amp;height=486&amp;name=brand-logo-blendy-1.png 2400w"} sizes="(max-width: 800px) 100vw, 800px"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=156&amp;height=156&amp;name=display-logo-blendy.png"} alt="blendy" width="156" height="156" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=78&amp;height=78&amp;name=display-logo-blendy.png 78w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=156&amp;height=156&amp;name=display-logo-blendy.png 156w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=234&amp;height=234&amp;name=display-logo-blendy.png 234w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=312&amp;height=312&amp;name=display-logo-blendy.png 312w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=390&amp;height=390&amp;name=display-logo-blendy.png 390w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=468&amp;height=468&amp;name=display-logo-blendy.png 468w"} sizes="(max-width: 156px) 100vw, 156px">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=156&amp;height=156&amp;name=display-logo-blendy.png"} alt="blendy" width="156" height="156" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=78&amp;height=78&amp;name=display-logo-blendy.png 78w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=156&amp;height=156&amp;name=display-logo-blendy.png 156w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=234&amp;height=234&amp;name=display-logo-blendy.png 234w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=312&amp;height=312&amp;name=display-logo-blendy.png 312w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=390&amp;height=390&amp;name=display-logo-blendy.png 390w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-blendy.png?width=468&amp;height=468&amp;name=display-logo-blendy.png 468w"} sizes="(max-width: 156px) 100vw, 156px"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> PAY-PER-USE </span>
-                                                            <span class="reviewer_detail1"> Rebecca Yau </span>
-                                                            <span class="reviewer_detail2"> Customer Service </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> PAY-PER-USE </span>
+                                                            <span className="reviewer_detail1"> Rebecca Yau </span>
+                                                            <span className="reviewer_detail2"> Customer Service </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
-                                                            <img class="featured-image-background" src={"assets/images/pricing/polkadot.jpg"}>
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
+                                                            <img className="featured-image-background" src={"assets/images/pricing/polkadot.jpg"}/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=150&amp;height=150&amp;name=display-pic-blendy.png"} alt="blendy" width="150" height="150" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=75&amp;height=75&amp;name=display-pic-blendy.png 75w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=150&amp;height=150&amp;name=display-pic-blendy.png 150w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=225&amp;height=225&amp;name=display-pic-blendy.png 225w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=300&amp;height=300&amp;name=display-pic-blendy.png 300w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=375&amp;height=375&amp;name=display-pic-blendy.png 375w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=450&amp;height=450&amp;name=display-pic-blendy.png 450w"} sizes="(max-width: 150px) 100vw, 150px">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=150&amp;height=150&amp;name=display-pic-blendy.png"} alt="blendy" width="150" height="150" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=75&amp;height=75&amp;name=display-pic-blendy.png 75w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=150&amp;height=150&amp;name=display-pic-blendy.png 150w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=225&amp;height=225&amp;name=display-pic-blendy.png 225w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=300&amp;height=300&amp;name=display-pic-blendy.png 300w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=375&amp;height=375&amp;name=display-pic-blendy.png 375w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-blendy.png?width=450&amp;height=450&amp;name=display-pic-blendy.png 450w"} sizes="(max-width: 150px) 100vw, 150px"/>
 
 
                                                     @macarenapaz.xo
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         This was our first campaign with ABRAND and it won't be our last! A super-friendly user experience paired with dedicated staff to answer all our questions makes this our go-to for content creation. We loved the submissions we received and our engagement and conversions increased, which is exactly what we'd hoped for.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=800&amp;height=162&amp;name=brand-logo-accoladewine.png"} alt="accolade" width="800" height="162" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=400&amp;height=81&amp;name=brand-logo-accoladewine.png 400w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=800&amp;height=162&amp;name=brand-logo-accoladewine.png 800w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=1200&amp;height=243&amp;name=brand-logo-accoladewine.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=1600&amp;height=324&amp;name=brand-logo-accoladewine.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=2000&amp;height=405&amp;name=brand-logo-accoladewine.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=2400&amp;height=486&amp;name=brand-logo-accoladewine.png 2400w"} sizes="(max-width: 800px) 100vw, 800px">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=800&amp;height=162&amp;name=brand-logo-accoladewine.png"} alt="accolade" width="800" height="162" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=400&amp;height=81&amp;name=brand-logo-accoladewine.png 400w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=800&amp;height=162&amp;name=brand-logo-accoladewine.png 800w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=1200&amp;height=243&amp;name=brand-logo-accoladewine.png 1200w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=1600&amp;height=324&amp;name=brand-logo-accoladewine.png 1600w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=2000&amp;height=405&amp;name=brand-logo-accoladewine.png 2000w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-accoladewine.png?width=2400&amp;height=486&amp;name=brand-logo-accoladewine.png 2400w"} sizes="(max-width: 800px) 100vw, 800px"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=156&amp;height=156&amp;name=display-logo-accolade.png"} alt="accolade" width="156" height="156" loading="lazy" srcset={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=78&amp;height=78&amp;name=display-logo-accolade.png 78w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=156&amp;height=156&amp;name=display-logo-accolade.png 156w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=234&amp;height=234&amp;name=display-logo-accolade.png 234w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=312&amp;height=312&amp;name=display-logo-accolade.png 312w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=390&amp;height=390&amp;name=display-logo-accolade.png 390w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=468&amp;height=468&amp;name=display-logo-accolade.png 468w"} sizes="(max-width: 156px) 100vw, 156px">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=156&amp;height=156&amp;name=display-logo-accolade.png"} alt="accolade" width="156" height="156" loading="lazy" srcSet={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=78&amp;height=78&amp;name=display-logo-accolade.png 78w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=156&amp;height=156&amp;name=display-logo-accolade.png 156w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=234&amp;height=234&amp;name=display-logo-accolade.png 234w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=312&amp;height=312&amp;name=display-logo-accolade.png 312w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=390&amp;height=390&amp;name=display-logo-accolade.png 390w, https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-accolade.png?width=468&amp;height=468&amp;name=display-logo-accolade.png 468w"} sizes="(max-width: 156px) 100vw, 156px"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> PRO </span>
-                                                            <span class="reviewer_detail1"> Charlotte Norris </span>
-                                                            <span class="reviewer_detail2"> Social Media Manager </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> PRO </span>
+                                                            <span className="reviewer_detail1"> Charlotte Norris </span>
+                                                            <span className="reviewer_detail2"> Social Media Manager </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
-                                                            <img class="featured-image-background" src={"assets/images/pricing/accolate-wines.jpg"} alt="accolade" width="630" height="630" loading="lazy">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
+                                                            <img className="featured-image-background" src={"assets/images/pricing/accolate-wines.jpg"} alt="accolade" width="630" height="630" loading="lazy"/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-accolade.png?width=150&amp;height=150&amp;name=display-pic-accolade.png"} alt="accolade" width="150" height="150" loading="lazy">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-accolade.png?width=150&amp;height=150&amp;name=display-pic-accolade.png"} alt="accolade" width="150" height="150" loading="lazy"/>
 
 
                                                     @stanleydru
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         It is a joy working with ABRAND. Their platform provides a diverse and highly skilled pool of talent that we can ensure align with our brand and marketing objectives. By working this closely with influencers, we’ve been able to quickly deliver our highest performing and most cost effective campaigns to date.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-logitechh.png?width=800&amp;height=162&amp;name=brand-logo-logitechh.png"} alt="logitech" width="800" height="162" loading="lazy" >
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-logitechh.png?width=800&amp;height=162&amp;name=brand-logo-logitechh.png"} alt="logitech" width="800" height="162" loading="lazy" />
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-logitechh.png?width=156&amp;height=156&amp;name=display-logo-logitechh.png"} alt="logitech" width="156" height="156" loading="lazy">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-logitechh.png?width=156&amp;height=156&amp;name=display-logo-logitechh.png"} alt="logitech" width="156" height="156" loading="lazy"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> TEAMS </span>
-                                                            <span class="reviewer_detail1"> Daniel Clayton </span>
-                                                            <span class="reviewer_detail2"> Digital Marketing Manager - North West Europe </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> TEAMS </span>
+                                                            <span className="reviewer_detail1"> Daniel Clayton </span>
+                                                            <span className="reviewer_detail2"> Digital Marketing Manager - North West Europe </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
-                                                            <img class="featured-image-background" src={"assets/images/pricing/pay-per-use.jpg"} alt="logitech" width="900" height="900" loading="lazy">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
+                                                            <img className="featured-image-background" src={"assets/images/pricing/pay-per-use.jpg"} alt="logitech" width="900" height="900" loading="lazy"/>
 
                                                         </div>
 
 
 
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-logitech.png?width=150&amp;height=150&amp;name=display-pic-logitech.png"} alt="logitech" width="150" height="150" loading="lazy">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-logitech.png?width=150&amp;height=150&amp;name=display-pic-logitech.png"} alt="logitech" width="150" height="150" loading="lazy"/>
 
 
                                                     @iansangala
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         I used to find Influencer Marketing really hard work; it's time consuming with sporadic costings. Not since I’ve started working with ABRAND! Pricing is clear, I can be live in minutes, and scale is no issue; with thousands of your brand's fans available to create amazing content. Plus, they’re a sh*t hot group of people too!
                                                     </p>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div class="testimonial-slide brand">
-                                                    <div class="control-image">
+                                                <div className="testimonial-slide brand">
+                                                    <div className="control-image">
 
-                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-polkadotcommunications.png?width=800&amp;height=162&amp;name=brand-logo-polkadotcommunications.png"} alt="polkadot" width="800" height="162" loading="lazy">
+                                                        <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/brand-logo-polkadotcommunications.png?width=800&amp;height=162&amp;name=brand-logo-polkadotcommunications.png"} alt="polkadot" width="800" height="162" loading="lazy"/>
                                                     </div>
-                                                    <div class="reviewer">
-                                                        <div class="dp">
+                                                    <div className="reviewer">
+                                                        <div className="dp">
 
 
-                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-polkadotcomm.png?width=156&amp;height=156&amp;name=display-logo-polkadotcomm.png"} alt="polkadot " width="156" height="156" loading="lazy">
+                                                            <img src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-logo-polkadotcomm.png?width=156&amp;height=156&amp;name=display-logo-polkadotcomm.png"} alt="polkadot " width="156" height="156" loading="lazy"/>
 
                                                         </div>
-                                                        <div class="reviewer-info">
-                                                            <span class="reviewer_name"> ENTERPRISE </span>
-                                                            <span class="reviewer_detail1"> Clare Goodhew </span>
-                                                            <span class="reviewer_detail2"> Senior Account Executive </span>
+                                                        <div className="reviewer-info">
+                                                            <span className="reviewer_name"> ENTERPRISE </span>
+                                                            <span className="reviewer_detail1"> Clare Goodhew </span>
+                                                            <span className="reviewer_detail2"> Senior Account Executive </span>
                                                         </div>
                                                     </div>
-                                                    <div class="featured-image-wrapper">
-                                                        <div class="featured-image">
+                                                    <div className="featured-image-wrapper">
+                                                        <div className="featured-image">
 
 
-                                                            <img class="featured-image-background" src={"assets/images/pricing/team.jpg"} alt="polkadot" width="900" height="900" loading="lazy">
+                                                            <img className="featured-image-background" src={"assets/images/pricing/team.jpg"} alt="polkadot" width="900" height="900" loading="lazy"/>
 
                                                         </div>
-                                                        <img class="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-polkadot.png?width=150&amp;height=150&amp;name=display-pic-polkadot.png"} alt="polkadot" width="150" height="150" loading="lazy">
+                                                        <img className="featured-image-dp" src={"https://www.tribegroup.co/hs-fs/hubfs/TRIBE-Website-2018-Assets/pricing/testimonials/display-pic-polkadot.png?width=150&amp;height=150&amp;name=display-pic-polkadot.png"} alt="polkadot" width="150" height="150" loading="lazy"/>
 
 
                                                     @aday_inthelifeof_us
                                                     </div>
-                                                    <p class="testimonial">
+                                                    <p className="testimonial">
                                                         Each time we have worked with ABRAND we have seen amazing results for our clients. The content developed by the Creators is beautiful and the team is always on hand to answer questions or guide you during a campaign. ABRAND is definitely top of mind for our team for anything and everything influencer related.
                                                     </p>
                                                 </div>
@@ -603,134 +613,134 @@ class brands extends React.Component {
                                         <div id="testimonial-slider-control"></div>
                                     </div>
                                 </section>
-                                <section class="pricing-product-feature">
-                                    <div class="copy inner-width-mobile inner-width">
+                                <section className="pricing-product-feature">
+                                    <div className="copy inner-width-mobile inner-width">
                                         <h2>Product Features</h2>
                                         <p>
 
                                         </p>
                                     </div>
-                                    <div class="copy-details inner-width-mobile inner-width">
-                                        <span class="hs_cos_wrapper_widget_container">
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/influencer-campaigns.png"} alt="influencer campaigns">
+                                    <div className="copy-details inner-width-mobile inner-width">
+                                        <span className="hs_cos_wrapper_widget_container">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/influencer-campaigns.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Influencer Campaigns</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>100% vetted influencers submit photos and videos celebrating your brand. You approve the ones you love and they post it to their followers.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <div class="image">
-                                                            <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/content-library.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <div className="image">
+                                                            <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/content-library.png"} alt="influencer campaigns"/>
                                                         </div>
                                                     </div>
                                                     <h3>Content Campaigns</h3>
                                                     <p>ABRAND's premium Creators generate branded content that you license for use on your own advertising channels. Includes legals and perpetual rights.</p>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/facebook-integration.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/facebook-integration.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Facebook Integration</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>Connect your brand’s Facebook account to push content from ABRAND straight to your Ads Manager, and synchronise insights & reporting.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/branded-content-ads.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/branded-content-ads.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Branded Content Ads</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>Turn your organic influencer posts into paid ads that include precise audience targeting, click through attribution and insights delivered straight into your Ads Manager.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/reporting.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/reporting.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Advanced Reporting & Benchmarking</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>1st party data to track an individual post or aggregate campaign metrics, with reach, impressions and swipe up data. Downloadable to CSV.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/sentiment-analysis.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/sentiment-analysis.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Sentiment Analysis</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>We apply AI Natural Language Processing to determine the audience sentiment and level of positivity to posts about your brand.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <div class="image">
-                                                            <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/content-library.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <div className="image">
+                                                            <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/content-library.png"} alt="influencer campaigns"/>
                                                         </div>
                                                     </div>
                                                     <h3>Content Campaigns</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>ABRAND's premium Creators generate branded content that you license for use on your own advertising channels. Includes legals and perpetual rights.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/facebook-integration.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/facebook-integration.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Facebook Integration</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>Connect your brand’s Facebook account to push content from ABRAND straight to your Ads Manager, and synchronise insights & reporting.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/branded-content-ads.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/branded-content-ads.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Branded Content Ads</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>Turn your organic influencer posts into paid ads that include precise audience targeting, click through attribution and insights delivered straight into your Ads Manager.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/reporting.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/reporting.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Advanced Reporting & Benchmarking</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>1st party data to track an individual post or aggregate campaign metrics, with reach, impressions and swipe up data. Downloadable to CSV.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="hs_cos_wrapper_type_module">
-                                                <div class="description-table small-image">
-                                                    <div class="image">
-                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/sentiment-analysis.png"} alt="influencer campaigns">
+                                            <div className="hs_cos_wrapper_type_module">
+                                                <div className="description-table small-image">
+                                                    <div className="image">
+                                                        <img src={"https://www.tribegroup.co/hubfs/TRIBE-Website-2018-Assets/pricing/sentiment-analysis.png"} alt="influencer campaigns"/>
                                                     </div>
                                                     <h3>Sentiment Analysis</h3>
-                                                    <div class="description-text">
+                                                    <div className="description-text">
                                                         <p>We apply AI Natural Language Processing to determine the audience sentiment and level of positivity to posts about your brand.</p>
                                                     </div>
                                                 </div>
@@ -738,45 +748,45 @@ class brands extends React.Component {
                                         </span>
                                     </div>
                                 </section>
-                                <section class="pricing-bottom-section">
-                                    <div class="copy inner-width-mobile inner-width">
+                                <section className="pricing-bottom-section">
+                                    <div className="copy inner-width-mobile inner-width">
                                         <h2>Instant branded content that performs</h2>
-                                        <a href="#" class="cta-button primary-cta">REQUEST A DEMO</a>
+                                        <a href="#" className="cta-button primary-cta">REQUEST A DEMO</a>
                                     </div>
                                 </section>
                             </div>
                         </main>
-                        <footer class="main-footer">
-                            <div class="newsletter-wrapper">
-                                <div class="inner-width-mobile inner-width">
-                                    <div class="newsletter-heading">Subscribe to our Newsletter for eye-catching case studies and clever campaign strategies.</div>
+                        <footer className="main-footer">
+                            <div className="newsletter-wrapper">
+                                <div className="inner-width-mobile inner-width">
+                                    <div className="newsletter-heading">Subscribe to our Newsletter for eye-catching case studies and clever campaign strategies.</div>
                                     <div id="hs_cos_wrapper_newsletter">
                                         <div id="hs_form_target_newsletter">
                                             <form action="">
-                                                <div class="hs_option_choices">
-                                                    <div class="input">
+                                                <div className="hs_option_choices">
+                                                    <div className="input">
                                                         <ul>
-                                                            <li class="hs-form-radio">
+                                                            <li className="hs-form-radio">
                                                                 <label>
-                                                                    <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
+                                                                    <input id="option" className="hs-input " type="radio" name="option_choices" defaultValue="influencer" defaultChecked="" />
                                                                     <span>I'm a Creator</span>
                                                                 </label>
                                                             </li>
-                                                            <li class="hs-form-radio">
+                                                            <li className="hs-form-radio">
                                                                 <label>
-                                                                    <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
+                                                                    <input id="option" className="hs-input " type="radio" name="option_choices" defaultValue="influencer" defaultChecked="" />
                                                                     <span>I'm a Brand</span>
                                                                 </label>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="hs_email">
-                                                    <div class="input">
-                                                        <input id="email" class="hs-input" type="email" name="email" required="" placeholder="Email address*" value="" autocomplete="email" />
+                                                <div className="hs_email">
+                                                    <div className="input">
+                                                        <input id="email" className="hs-input" type="email" name="email" required="" placeholder="Email address*" defaultValue="" autoComplete="email" />
                                                         <button>
                                                             <span>SUBSCRIBE</span>
-                                                            <span class="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter"> </span>
+                                                            <span className="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter"/> </span>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -787,10 +797,10 @@ class brands extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="footer-link-wrapper">
-                                <div class="inner-width footer-link inner-width-mobile">
+                            <div className="footer-link-wrapper">
+                                <div className="inner-width footer-link inner-width-mobile">
                                     <div>
-                                        <nav class="footer-menu">
+                                        <nav className="footer-menu">
                                             <ul role="menu">
                                                 <li><a href="#">Marketers in Pyjamas</a></li>
                                                 <li><a href="#">About Us</a></li>
@@ -802,7 +812,7 @@ class brands extends React.Component {
                                         </nav>
                                     </div>
                                     <div>
-                                        <div class="social-icons">
+                                        <div className="social-icons">
                                             <a href="#" title="instagram" target="_blank">
                                                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
                                                     <g id="layer1">
@@ -843,50 +853,50 @@ class brands extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="footer-locations">
-                                <div class="inner-width inner-width-mobile">
+                            <div className="footer-locations">
+                                <div className="inner-width inner-width-mobile">
                                     <div id="hs_cos_wrapper_footer-locations">
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">New York</span>
-                                                <span class ="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">New York</span>
+                                                <span className ="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">London</span>
-                                                <span class ="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">London</span>
+                                                <span className ="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">Melbourne</span>
-                                                <span class ="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">Melbourne</span>
+                                                <span className ="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="location">
-                                                <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true">
-                                                <div class ="location-address">
-                                                <span class ="name">Sydney</span>
-                                                <span class ="address-line">L45/680 George St, Sydney, NSW 2000</span>
+                                            <div className="location">
+                                                <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true"/>
+                                                <div className ="location-address">
+                                                <span className ="name">Sydney</span>
+                                                <span className ="address-line">L45/680 George St, Sydney, NSW 2000</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer-content inner-width-mobile inner-width">
-                                <div class="footer-copyright">
+                            <div className="footer-content inner-width-mobile inner-width">
+                                <div className="footer-copyright">
                                     <div>© abrand 2021</div>
                                     <a href="#">Privacy Policy</a>
                                     <a href="#">Terms and Conditions</a>

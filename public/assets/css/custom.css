@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap');
+body {
+    margin: 0;
+    background: #f4f8fa;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+main .container {
+    background: #fff;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgb(53 105 128 / 30%), 0 6px 20px 0 rgb(165 200 213 / 41%);
+}
+form#inquery-form {
+    padding: 40px;
+}
+
+.form-rich-text .logo {
+    margin-bottom: 30px;
+}
+.logo img {
+    width: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+form#inquery-form .form-group, form#inquery-form .form_actions {
+    margin-bottom: 18px;
+}
+.form-rich-text {
+    width: 100%;
+    margin-bottom: 3px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #33475b;
+    font-family: 'Lato', sans-serif;
+}
+/* .form-rich-text h1 {
+    line-height: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin-top: 15px;
+} */
+form#inquery-form .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #cad5e2!important;
+    outline: 0;
+    box-shadow: unset;
+}
+form#inquery-form select.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #c87872!important;
+    outline: 0;
+    box-shadow: unset;
+}
+form#inquery-form .form-group input:not(select) {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid #cad5e2;
+}
+form#inquery-form .form-group textarea:not(select) {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px solid #cad5e2;
+}
+form#inquery-form .form-group textarea{
+    height: auto;
+    max-width: 100%;
+}
+form#inquery-form .form-group label {
+    font-size: 14px;
+    font-family: 'Lato',sans-serif;
+    color: #4D4D4d;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    float: none;
+    width: auto;
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 4px;
+}
+form#inquery-form .form-group label:after {
+    margin-left: 4px;
+    color: red;
+    content: "*";
+}
+form#inquery-form .form-group label#vertical-label:after {
+    margin-left: 0;
+    color: unset;
+    content: "";
+}
+form#inquery-form .form-group .radio-button-group .radio-button label#vertical-label {
+    font-weight: 400;
+    clear: both;
+}
+.form-group select.form-field-input, .form-group .form-field-input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 9px 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: #33475b;
+    background-color: #f5f8fa;
+    border: 1px solid #cbd6e2;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.field-description {
+    font-size: 12px;
+    color: #4D4D4d;
+    margin-bottom: 6px;
+    font-family: 'Lato', sans-serif;
+}
+.field-description a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+button.form_actions_submit {
+    background: #F1480B;
+    border: 1px solid #ff7a59;
+    border-color: #F1480B;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+form#inquery-form .form-group .radio-button-group .radio-button label#vertical-label {
+    font-weight: 400;
+    clear: both;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: flex-start;
+    flex: 0 1 auto;
+}
+label#vertical-label span.radio_label-span {
+    margin-left: 15px;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+form#inquery-form .form-group .radio-button-group {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.radio-button input.form-control.vertical-input {
+    width: auto;
+    height: auto;
+}
+form#inquery-form .form-group span.error {
+    color: #f2545b!important;
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+form#inquery-form .form-group .field-error {
+    border-color: #c87872!important;
+}
+
+@media only screen and (max-width: 600px){
+
+main .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo img {
+    width: 300px;
+    max-width: 100%;
+}
+}

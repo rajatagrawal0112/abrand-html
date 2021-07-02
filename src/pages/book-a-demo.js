@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 class bookADemo extends React.Component {
     render() {
@@ -6,22 +7,33 @@ class bookADemo extends React.Component {
             <body class="home">
                 <header class="main-header capped-width has-shadow" role="none">
                     <div class="navigation">
-                        <div class="logo"><img src={"assets/images/logo.png"} alt=""/> </div>
+                        <div class="logo"><img src={"assets/images/logo.png"} alt="" /> </div>
                         <nav class="header-menu">
                             <ul>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+
+                                    <p><NavLink exact to="/brands">
+                                        Platform
+                                    </NavLink>
+                                    </p>
+                                </li>
                                 <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
                                     <ul class="hs-menu-children-wrapper">
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
                                         <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li class="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"> <p><NavLink exact to="/retailAndEcommerce">Retail & eComm</NavLink></p></li>
                                     </ul>
                                 </li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><p><NavLink exact to="/influencers">Creators</NavLink></p></li>
                                 <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li class="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/pricing">Pricing</NavLink></p>
+                                </li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/bookademo">Request a Demo</NavLink></p>
+                                </li>
+
                             </ul>
                         </nav>
                     </div>
@@ -29,7 +41,7 @@ class bookADemo extends React.Component {
                 </header>
                 <header class="mobile-header  home" role="none">
                     <div class="icon-wrapper" role="navigation">
-                        <a href="/"><img src={"assets/images/logo-mobile.png"} width="50" style={{"width": "50px"}} alt="Logo" title="Logo"/></a>
+                        <a href="/"><img src={"assets/images/logo-mobile.png"} width="50" style={{ "width": "50px" }} alt="Logo" title="Logo" /></a>
                     </div>
                 </header>
                 <aside class="mobile-menu">
@@ -109,18 +121,18 @@ class bookADemo extends React.Component {
                 <main class="main-content ">
                     <div id="page-form-main-content">
                         <section id="page-form-image-wrapper" class="fade-in-image inner-width-mobile">
-                            <img src={"assets/images/book-demo/2xBookADemo.png"} alt="" class="hs-cta-img"/>
-                            <h1 class ="header">
-                            <p style={{"font-size": "24px;"}}>Level up your digital strategy with influencer marketing and branded content that performs.</p>
+                            <img src={"assets/images/book-demo/2xBookADemo.png"} alt="" class="hs-cta-img" />
+                            <h1 class="header">
+                                <p style={{ "font-size": "24px;" }}>Level up your digital strategy with influencer marketing and branded content that performs.</p>
                             </h1>
-                            <div class ="points">
-                            <span id="hs_cos_wrapper_Points_copy" class ="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style={{"":""}} data-hs-cos-general-type ="widget" data-hs-cos-type ="rich_text">
-                            <p><span style={{"font-weight": "500;"}}>• Get started quickly<strong> <span style={{"font-weight": "300;"}}>with an annual subscription or pay-per-use access</span></strong></span></p>
-                            <p><span style={{"font-weight": "500;"}}>• See high quality content <span style={{"font-weight": "300;"}}> from our creator network with a live inbox demo</span></span></p>
-                            <p><span style={{"font-weight": "500;"}}>• Reduce costs <span style={{"font-weight": "300;"}}>with transparent and flexible pricing</span></span></p>
-                            <p><span style={{"font-weight": "500;"}}>• Drive ROI <span style={{"font-weight": "300;"}}>with 1st party data and performance analytics</span></span></p>
-                            <p><span style={{"font-weight": "500;"}}>• Learn best practice <span style={{"font-weight": "300;"}}>with industry-specific case studies</span></span></p>
-                            </span>
+                            <div class="points">
+                                <span id="hs_cos_wrapper_Points_copy" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style={{ "": "" }} data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                                    <p><span style={{ "font-weight": "500;" }}>• Get started quickly<strong> <span style={{ "font-weight": "300;" }}>with an annual subscription or pay-per-use access</span></strong></span></p>
+                                    <p><span style={{ "font-weight": "500;" }}>• See high quality content <span style={{ "font-weight": "300;" }}> from our creator network with a live inbox demo</span></span></p>
+                                    <p><span style={{ "font-weight": "500;" }}>• Reduce costs <span style={{ "font-weight": "300;" }}>with transparent and flexible pricing</span></span></p>
+                                    <p><span style={{ "font-weight": "500;" }}>• Drive ROI <span style={{ "font-weight": "300;" }}>with 1st party data and performance analytics</span></span></p>
+                                    <p><span style={{ "font-weight": "500;" }}>• Learn best practice <span style={{ "font-weight": "300;" }}>with industry-specific case studies</span></span></p>
+                                </span>
                             </div>
                         </section>
                         <section id="page-form">
@@ -128,9 +140,9 @@ class bookADemo extends React.Component {
                                 <h2 class="header">Request your custom demo</h2>
                                 <div class="book-a-demo-form">
                                     <ul>
-                                        <li class="half"><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="First Name*"/></li>
-                                        <li class="half"><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Email*"/></li>
-                                        <li><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Phone Number*"/></li>
+                                        <li class="half"><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="First Name*" /></li>
+                                        <li class="half"><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Email*" /></li>
+                                        <li><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Phone Number*" /></li>
                                         <li class="select-field">
                                             <select id="region_dropdown" required="" class="hs-input is-placeholder" name="region_dropdown">
                                                 <option value="" disabled="" selected="">Region*</option>
@@ -140,7 +152,7 @@ class bookADemo extends React.Component {
                                                 <option value="Other">Other</option>
                                             </select>
                                         </li>
-                                        <li><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Company Name*"/></li>
+                                        <li><input class="hs-input" type="text" name="firstname" required="" value="" placeholder="Company Name*" /></li>
                                         <li class="select-field">
                                             <select id="CompanyType" required="" class="hs-input is-placeholder" name="CompanyType">
                                                 <option value="" disabled="" selected="">Company Type*</option>
@@ -149,67 +161,67 @@ class bookADemo extends React.Component {
                                             </select>
                                         </li>
                                         <li class="select-field">
-                                        <select id="company-size" required="" class ="hs-input is-placeholder" name="company_size">
-                                        <option value="" disabled="" selected="">Company Size*</option>
-                                        <option value="1-10">1-10</option>
-                                        <option value="11-50">11-50</option>
-                                        <option value="51-200">51-200</option>
-                                        <option value="201-1000">201-1000</option>
-                                        <option value="1000+">1000+</option>
-                                        </select>
+                                            <select id="company-size" required="" class="hs-input is-placeholder" name="company_size">
+                                                <option value="" disabled="" selected="">Company Size*</option>
+                                                <option value="1-10">1-10</option>
+                                                <option value="11-50">11-50</option>
+                                                <option value="51-200">51-200</option>
+                                                <option value="201-1000">201-1000</option>
+                                                <option value="1000+">1000+</option>
+                                            </select>
                                         </li>
-                                        <li class ="select-field">
-                                        <select id="category" required="" class ="hs-input is-placeholder" name="category">
-                                        <option value="" disabled="" selected="">Which category best describes your product or business?*</option>
-                                        <option value="Animals">Animals</option>
-                                        <option value="Automotive">Automotive</option>
-                                        <option value="Beauty &amp; Personal Care">Beauty &amp; Personal Care</option>
-                                        <option value="Business, Finance &amp; Insurance">Business, Finance &amp; Insurance</option>
-                                        <option value="Children &amp; Family">Children &amp; Family</option>
-                                        <option value="Education &amp; Books">Education &amp; Books</option>
-                                        <option value="Entertainment &amp; Events">Entertainment &amp; Events</option>
-                                        <option value="Fashion">Fashion</option>
-                                        <option value="Food &amp; Drink">Food &amp; Drink</option>
-                                        <option value="Fitness &amp; Sport">Health</option>
-                                        <option value="Home &amp; Garden">Home &amp; Garden</option>
-                                        <option value="Photography, Art &amp; Design">Photography, Art &amp; Design</option>
-                                        <option value="Restaurant, Bars &amp; Hotels">Restaurant, Bars &amp; Hotels</option>
-                                        <option value="Social Enterprise &amp; Not-for-profit">Social Enterprise &amp; Not-for-profit</option>
-                                        <option value="Social Media, Web &amp; Tech">Social Media, Web &amp; Tech</option>
-                                        <option value="Travel &amp; Destinations">Travel &amp; Destinations</option>
-                                        <option value="Other">Other</option>
-                                        </select>
+                                        <li class="select-field">
+                                            <select id="category" required="" class="hs-input is-placeholder" name="category">
+                                                <option value="" disabled="" selected="">Which category best describes your product or business?*</option>
+                                                <option value="Animals">Animals</option>
+                                                <option value="Automotive">Automotive</option>
+                                                <option value="Beauty &amp; Personal Care">Beauty &amp; Personal Care</option>
+                                                <option value="Business, Finance &amp; Insurance">Business, Finance &amp; Insurance</option>
+                                                <option value="Children &amp; Family">Children &amp; Family</option>
+                                                <option value="Education &amp; Books">Education &amp; Books</option>
+                                                <option value="Entertainment &amp; Events">Entertainment &amp; Events</option>
+                                                <option value="Fashion">Fashion</option>
+                                                <option value="Food &amp; Drink">Food &amp; Drink</option>
+                                                <option value="Fitness &amp; Sport">Health</option>
+                                                <option value="Home &amp; Garden">Home &amp; Garden</option>
+                                                <option value="Photography, Art &amp; Design">Photography, Art &amp; Design</option>
+                                                <option value="Restaurant, Bars &amp; Hotels">Restaurant, Bars &amp; Hotels</option>
+                                                <option value="Social Enterprise &amp; Not-for-profit">Social Enterprise &amp; Not-for-profit</option>
+                                                <option value="Social Media, Web &amp; Tech">Social Media, Web &amp; Tech</option>
+                                                <option value="Travel &amp; Destinations">Travel &amp; Destinations</option>
+                                                <option value="Other">Other</option>
+                                            </select>
                                         </li>
-                                        <li class ="select-field">
-                                        <select id="contact_source" class ="hs-input is-placeholder" name="contact_source">
-                                        <option value="" disabled="" selected="">How did you hear about us?</option>
-                                        <option value="Advertising">Advertising</option>
-                                        <option value="Events">Events</option>
-                                        <option value="Blog or publication">Blog or publication</option>
-                                        <option value="Search engine">Search engine</option>
-                                        <option value="Facebook">Facebook</option>
-                                        <option value="LinkedIN">LinkedIN</option>
-                                        <option value="Twitter">Twitter</option>
-                                        <option value="Reviews website">Reviews website</option>
-                                        <option value="Word of mouth">Word of mouth</option>
-                                        </select>
-                                        </li>
-                                        <li>
-                                        <label class ="styled-checkbox">
-                                        <input id="t_c_agreement" class ="hs-checkbox-input" type ="checkbox" name="t_c_agreement" value="true"/>
-                                        <span class ="checkbox"></span>
-                                        <span>I agree to the T&amp; C's and Privacy Policy</span>
-                                        </label>
+                                        <li class="select-field">
+                                            <select id="contact_source" class="hs-input is-placeholder" name="contact_source">
+                                                <option value="" disabled="" selected="">How did you hear about us?</option>
+                                                <option value="Advertising">Advertising</option>
+                                                <option value="Events">Events</option>
+                                                <option value="Blog or publication">Blog or publication</option>
+                                                <option value="Search engine">Search engine</option>
+                                                <option value="Facebook">Facebook</option>
+                                                <option value="LinkedIN">LinkedIN</option>
+                                                <option value="Twitter">Twitter</option>
+                                                <option value="Reviews website">Reviews website</option>
+                                                <option value="Word of mouth">Word of mouth</option>
+                                            </select>
                                         </li>
                                         <li>
-                                        <label class ="styled-checkbox">
-                                        <input id="confirm_opt" class ="hs-checkbox-input" type ="checkbox" name="confirm_opt_in" value="true"/>
-                                        <span class ="checkbox"></span>
-                                        <span>Sign me up to receive exclusive marketing updates and insights from ABRAND</span>
-                                        </label>
+                                            <label class="styled-checkbox">
+                                                <input id="t_c_agreement" class="hs-checkbox-input" type="checkbox" name="t_c_agreement" value="true" />
+                                                <span class="checkbox"></span>
+                                                <span>I agree to the T&amp; C's and Privacy Policy</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="styled-checkbox">
+                                                <input id="confirm_opt" class="hs-checkbox-input" type="checkbox" name="confirm_opt_in" value="true" />
+                                                <span class="checkbox"></span>
+                                                <span>Sign me up to receive exclusive marketing updates and insights from ABRAND</span>
+                                            </label>
 
                                         </li>
-                                        <li class ="button"><input type ="button" class ="cta-button primary-cta" value="Request a Demo"/></li>
+                                        <li class="button"><input type="button" class="cta-button primary-cta" value="Request a Demo" /></li>
                                     </ul>
                                 </div>
                             </div>
@@ -228,13 +240,13 @@ class bookADemo extends React.Component {
                                                 <ul>
                                                     <li class="hs-form-radio">
                                                         <label>
-                                                            <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked=""/>
+                                                            <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
                                                             <span>I'm a Creator</span>
                                                         </label>
                                                     </li>
                                                     <li class="hs-form-radio">
                                                         <label>
-                                                            <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked=""/>
+                                                            <input id="option" class="hs-input " type="radio" name="option_choices" value="influencer" checked="" />
                                                             <span>I'm a Brand</span>
                                                         </label>
                                                     </li>
@@ -243,10 +255,10 @@ class bookADemo extends React.Component {
                                         </div>
                                         <div class="hs_email">
                                             <div class="input">
-                                                <input id="email" class="hs-input" type="email" name="email" required="" placeholder="Email address*" value="" autocomplete="email"/>
+                                                <input id="email" class="hs-input" type="email" name="email" required="" placeholder="Email address*" value="" autocomplete="email" />
                                                 <button>
-                                                <span>SUBSCRIBE</span>
-                                                <span class ="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter"/> </span>
+                                                    <span>SUBSCRIBE</span>
+                                                    <span class="arrow-button"> <img src={"assets/images/right-arrow.svg"} alt="subscribe newsletter" /> </span>
                                                 </button>
                                             </div>
                                         </div>
@@ -317,37 +329,37 @@ class bookADemo extends React.Component {
                             <div id="hs_cos_wrapper_footer-locations">
                                 <div>
                                     <div class="location">
-                                        <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true"/>
-                                        <div class ="location-address">
-                                        <span class ="name">New York</span>
-                                        <span class ="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
+                                        <img src={"assets/images/Footer-NYC-x2.png"} data-loaded="true" />
+                                        <div class="location-address">
+                                            <span class="name">New York</span>
+                                            <span class="address-line">Floor 3, 230 Park Ave, New York City, New York 10169</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="location">
-                                        <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true"/>
-                                        <div class ="location-address">
-                                        <span class ="name">London</span>
-                                        <span class ="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
+                                        <img src={"assets/images/Footer-LDN-x2.png"} data-loaded="true" />
+                                        <div class="location-address">
+                                            <span class="name">London</span>
+                                            <span class="address-line">3 Waterhouse Square 138 Holborn, London EC1N 2SW</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="location">
-                                        <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true"/>
-                                        <div class ="location-address">
-                                        <span class ="name">Melbourne</span>
-                                        <span class ="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
+                                        <img src={"assets/images/Footer-MEL-x2.png"} data-loaded="true" />
+                                        <div class="location-address">
+                                            <span class="name">Melbourne</span>
+                                            <span class="address-line">L4/180 Albert Rd, South Melbourne, VIC 3205</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="location">
-                                        <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true"/>
-                                        <div class ="location-address">
-                                        <span class ="name">Sydney</span>
-                                        <span class ="address-line">L45/680 George St, Sydney, NSW 2000</span>
+                                        <img src={"assets/images/Footer-SYD-x2.png"} data-loaded="true" />
+                                        <div class="location-address">
+                                            <span class="name">Sydney</span>
+                                            <span class="address-line">L45/680 George St, Sydney, NSW 2000</span>
                                         </div>
                                     </div>
                                 </div>

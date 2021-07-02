@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+
 
 class brands extends React.Component {
     render() {
@@ -6,25 +8,37 @@ class brands extends React.Component {
             <body className="platform">
                 <header className="main-header capped-width has-shadow" role="none">
                     <div className="navigation">
-                        <div className="logo"><img src={"assets/images/logo.png"} alt="" /> </div>
-                        <nav className="header-menu">
+                    <div class="logo">
+                    <a href="/">
+                            <img src={"assets/images/logo.png"} alt="" />
+                               </a> 
+                        </div>
+                        <nav class="header-menu">
                             <ul>
-                                <li className="hs-menu-item hs-menu-depth-1"><a href="brands.html">Platform</a></li>
-                                <li className="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
-                                    <ul className="hs-menu-children-wrapper">
-                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
-                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
-                                        <li className="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
-                                        <li className="hs-menu-item hs-menu-depth-2"><a href="retaill-and-ecommerce.html">Retail &amp; eComm</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                
+                                <p><NavLink exact to="/brands">Platform</NavLink></p>
+                                    </li>
+                                <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="retaill-and-ecommerce.html">Solutions</a>
+                                    <ul class="hs-menu-children-wrapper">
+                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Food &amp; Drink</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Beauty &amp; Personal Care</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"><a href="#">Family &amp; Children</a></li>
+                                        <li class="hs-menu-item hs-menu-depth-2"> <p><NavLink exact to="/retailAndEcommerce">Retail & eComm</NavLink></p></li>
                                     </ul>
                                 </li>
-                                <li className="hs-menu-item hs-menu-depth-1"><a href="influencers.html">Creators</a></li>
-                                <li className="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
-                                <li className="hs-menu-item hs-menu-depth-1"><a href="pricing.html">Pricing</a></li>
-                                <li className="hs-menu-item hs-menu-depth-1"><a href="book-a-demo.html">Request a Demo</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><p><NavLink exact to="/influencers">Creators</NavLink></p></li>
+                                <li class="hs-menu-item hs-menu-depth-1"><a href="#">Case Studies</a></li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/pricing">Pricing</NavLink></p>
+                                </li>
+                                <li class="hs-menu-item hs-menu-depth-1">
+                                    <p><NavLink exact to="/bookademo">Request a Demo</NavLink></p>
+                                </li>
+
                             </ul>
                         </nav>
-                    </div>
+                      </div>
                     <div className="login_calltoaction"> <a href="#">Login</a> <a className="cta-button primary-cta" href="#">Get Started Today</a> </div>
                 </header>
                 <header className="mobile-header  home" role="none">
