@@ -9,7 +9,11 @@ class influencers extends React.Component {
             <body className="creator">
                 <header className="main-header capped-width has-shadow" role="none">
                     <div className="navigation">
-                        <div className="logo"><img src={"assets/images/logo.png"} alt=""/> </div>
+                    <div class="logo">
+                            <a href="/">
+                                <img src={"assets/images/logo.png"} alt="" />
+                            </a>
+                        </div>
                         <nav class="header-menu">
                             <ul>
                                 <li class="hs-menu-item hs-menu-depth-1">
@@ -38,7 +42,7 @@ class influencers extends React.Component {
                             </ul>
                         </nav>
                         </div>
-                    <div className="login_calltoaction"> <a href="#">Login</a> <a className="cta-button primary-cta" href="#">Get Started Today</a> </div>
+                    <div className="login_calltoaction"> <a href="#">Login</a> <a className="cta-button primary-cta" href="/signup">Get Started Today</a> </div>
                 </header>
                 <header className="mobile-header  home" role="none">
                     <div className="icon-wrapper" role="navigation">
@@ -107,7 +111,7 @@ class influencers extends React.Component {
                     </div>
                 </aside>
                 <div className="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
-                    <a id="" className="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
+                    <a id="" className="cta-button primary-cta" href="/signup" title="Get Started Today">Get Started Today</a>
                     <section className="login_calltoaction" role="navigation">
                         <a href="#" target="_blank">LOGIN</a>
                     </section>

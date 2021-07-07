@@ -39,7 +39,7 @@ class Index extends React.Component {
                             </ul>
                         </nav>
                     </div>
-                    <div class="login_calltoaction"> <a href="#">Login</a> <a class="cta-button primary-cta" href="#">Get Started Today</a> </div>
+                    <div class="login_calltoaction"> <a href="#">Login</a> <a class="cta-button primary-cta" href="/signup">Get Started Today</a> </div>
                 </header>
                 <header class="mobile-header  home" role="none">
                     <div class="icon-wrapper" role="navigation">
@@ -108,7 +108,7 @@ class Index extends React.Component {
                     </div>
                 </aside>
                 <div class="mobile-menu flexible-cta" role="navigation" aria-label="Get Started for Free">
-                    <a id="" class="cta-button primary-cta" href="#" title="Get Started Today">Get Started Today</a>
+                    <a id="" class="cta-button primary-cta" href="/signup" title="Get Started Today">Get Started Today</a>
                     <section class="login_calltoaction" role="navigation">
                         <a href="#" target="_blank">LOGIN</a>
                     </section>
